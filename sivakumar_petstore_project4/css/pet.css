@@ -1,0 +1,137 @@
+@-ms-viewport{
+	width: device-width;
+  }
+head{
+
+	background-color: #000033;
+	margin: 0px;
+	padding:0px;
+}
+
+p, ul, li, label{
+	color: #666666;
+	font: Arial;
+	padding: 0px;
+	margin-left: 10px;
+}
+
+input[type=text],[type=tel],[type=email],[type=password], textarea {
+    width: 100%; 
+    padding: 12px; 
+    border: 1px solid #ccc; 
+    box-sizing: border-box; 
+    margin-top: 6px; 
+    margin-bottom: 16px; 
+    resize: vertical;
+}
+
+ .pet{
+	
+	
+	padding: 2px;
+	
+}
+h1{
+	line-height: 200%;
+	background-image:  url(gradientblue.jpg);
+    margin: 0px;
+    padding:2px;
+    color: white;
+    width: 100%;
+    position:relative;
+    display: inline-block;
+    background-color: #000033;
+}
+
+h2{
+	color: #3399CC;
+	font-family: Georgia;
+	padding: 5px;
+	margin-left: 0px;
+
+}
+#wrapper{
+	float:left;
+	padding: 0px;
+	margin:0px;
+	align-content: center;
+	width:80%;
+}
+
+
+img{
+	
+	width: 115%;
+	float:left;
+	
+	
+}
+nav {
+padding: 5px;
+background-color: #90C7E3;
+height: 1100px;
+}
+
+nav a{
+
+
+color: #666666;
+text-align: center;
+padding: 8px 10px;
+text-decoration: none;
+font-family: Georgia;
+font-weight: bold;
+
+}
+.row::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+[class*="col-"] {
+    float: left;
+	padding: 10px;
+	height: auto;
+}
+/* For desktop: */
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    [class*="col-"] {
+        width: 100%;
+    }
+}
+
+
+
+/*tr:nth-of-type(odd){
+	background-color: #dddddd;
+}*/
+table, th, td{
+	border-spacing: 0px;
+	align-content: center;
+	align-self: center;
+	padding: 0px;
+	
+}
+
+
+footer {
+	color:#666666;
+	background-color: #FFFFFF;
+	font-size: .70 em;
+	text-align: center;
+	font-style: italic;
+}
