@@ -1,0 +1,551 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1561\cocoasubrtf400
+{\fonttbl\f0\fnil\fcharset0 Menlo-Regular;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;\red255\green255\blue255;}
+{\*\expandedcolortbl;;\csgray\c0;\csgray\c100000;}
+\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f0\fs22 \cf2 \cb3 \CocoaLigature0 myHadoop: Setting MH_IPOIB_TRANSFORM='s/\\([^.]*\\).*$/\\1.ibnet/' from myhadoop.co\
+nf\
+myHadoop: Setting MH_SCRATCH_DIR=/scratch/$USER/$SLURM_JOBID from myhadoop.conf\
+myHadoop: Using HADOOP_HOME=/opt/hadoop/2.6.0\
+myHadoop: Using MH_SCRATCH_DIR=/scratch/sivakuma/19359513\
+myHadoop: Using JAVA_HOME=/usr/java/latest\
+myHadoop: Generating Hadoop configuration in directory in /home/sivakuma/cometcl\
+uster...\
+myHadoop: Designating comet-06-50.ibnet as master node (namenode, secondary name\
+node, and jobtracker)\
+myHadoop: The following nodes will be slaves (datanode, tasktracer):\
+comet-06-50.ibnet\
+comet-06-54.ibnet\
+comet-06-56.ibnet\
+18/09/28 18:01:43 INFO namenode.NameNode: STARTUP_MSG: \
+/************************************************************\
+STARTUP_MSG: Starting NameNode\
+STARTUP_MSG:   host = comet-06-50.sdsc.edu/198.202.114.117\
+STARTUP_MSG:   args = [-format]\
+STARTUP_MSG:   version = 2.6.0\
+STARTUP_MSG:   classpath = /home/sivakuma/cometcluster:/opt/hadoop/2.6.0/share/h\
+adoop/common/lib/apacheds-kerberos-codec-2.0.0-M15.jar:/opt/hadoop/2.6.0/share/h\
+adoop/common/lib/paranamer-2.3.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/pro\
+tobuf-java-2.5.0.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/jersey-server-1.9\
+.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/commons-el-1.0.jar:/opt/hadoop/2.\
+6.0/share/hadoop/common/lib/api-util-1.0.0-M20.jar:/opt/hadoop/2.6.0/share/hadoo\
+p/common/lib/slf4j-api-1.7.5.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/slf4j\
+-log4j12-1.7.5.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/junit-4.11.jar:/opt\
+/hadoop/2.6.0/share/hadoop/common/lib/activation-1.1.jar:/opt/hadoop/2.6.0/share\
+/hadoop/common/lib/jackson-xc-1.9.13.jar:/opt/hadoop/2.6.0/share/hadoop/common/l\
+ib/commons-net-3.1.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/java-xmlbuilder\
+-0.4.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/gson-2.2.4.jar:/opt/hadoop/2.\
+6.0/share/hadoop/common/lib/jetty-util-6.1.26.jar:/opt/hadoop/2.6.0/share/hadoop\
+/common/lib/jettison-1.1.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/commons-l\
+ang-2.6.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/hadoop-auth-2.6.0.jar:/opt\
+/hadoop/2.6.0/share/hadoop/common/lib/netty-3.6.2.Final.jar:/opt/hadoop/2.6.0/sh\
+are/hadoop/common/lib/commons-beanutils-1.7.0.jar:/opt/hadoop/2.6.0/share/hadoop\
+/common/lib/zookeeper-3.4.6.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/jasper\
+-compiler-5.5.23.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/hadoop-annotation\
+s-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/jetty-6.1.26.jar:/opt/hado\
+op/2.6.0/share/hadoop/common/lib/jsch-0.1.42.jar:/opt/hadoop/2.6.0/share/hadoop/\
+common/lib/htrace-core-3.0.4.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/jets3\
+t-0.9.0.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/commons-configuration-1.6.\
+jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/commons-beanutils-core-1.8.0.jar:/\
+opt/hadoop/2.6.0/share/hadoop/common/lib/jaxb-impl-2.2.3-1.jar:/opt/hadoop/2.6.0\
+/share/hadoop/common/lib/jersey-json-1.9.jar:/opt/hadoop/2.6.0/share/hadoop/comm\
+on/lib/jersey-core-1.9.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/servlet-api\
+-2.5.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/commons-httpclient-3.1.jar:/o\
+pt/hadoop/2.6.0/share/hadoop/common/lib/commons-cli-1.2.jar:/opt/hadoop/2.6.0/sh\
+are/hadoop/common/lib/xz-1.0.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/jacks\
+on-jaxrs-1.9.13.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/commons-math3-3.1.\
+1.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/stax-api-1.0-2.jar:/opt/hadoop/2\
+.6.0/share/hadoop/common/lib/mockito-all-1.8.5.jar:/opt/hadoop/2.6.0/share/hadoo\
+p/common/lib/hamcrest-core-1.3.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/asm\
+-3.2.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/commons-compress-1.4.1.jar:/o\
+pt/hadoop/2.6.0/share/hadoop/common/lib/avro-1.7.4.jar:/opt/hadoop/2.6.0/share/h\
+adoop/common/lib/guava-11.0.2.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/jsp-\
+api-2.1.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/curator-client-2.6.0.jar:/\
+opt/hadoop/2.6.0/share/hadoop/common/lib/curator-recipes-2.6.0.jar:/opt/hadoop/2\
+.6.0/share/hadoop/common/lib/jaxb-api-2.2.2.jar:/opt/hadoop/2.6.0/share/hadoop/c\
+ommon/lib/commons-digester-1.8.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/jac\
+kson-core-asl-1.9.13.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/apacheds-i18n\
+-2.0.0-M15.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/httpcore-4.2.5.jar:/opt\
+/hadoop/2.6.0/share/hadoop/common/lib/commons-codec-1.4.jar:/opt/hadoop/2.6.0/sh\
+are/hadoop/common/lib/log4j-1.2.17.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib\
+/commons-logging-1.1.3.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/snappy-java\
+-1.0.4.1.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/curator-framework-2.6.0.j\
+ar:/opt/hadoop/2.6.0/share/hadoop/common/lib/jasper-runtime-5.5.23.jar:/opt/hado\
+op/2.6.0/share/hadoop/common/lib/httpclient-4.2.5.jar:/opt/hadoop/2.6.0/share/ha\
+doop/common/lib/xmlenc-0.52.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/common\
+s-io-2.4.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/commons-collections-3.2.1\
+.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/jsr305-1.3.9.jar:/opt/hadoop/2.6.\
+0/share/hadoop/common/lib/jackson-mapper-asl-1.9.13.jar:/opt/hadoop/2.6.0/share/\
+hadoop/common/lib/api-asn1-api-1.0.0-M20.jar:/opt/hadoop/2.6.0/share/hadoop/comm\
+on/hadoop-common-2.6.0-tests.jar:/opt/hadoop/2.6.0/share/hadoop/common/hadoop-co\
+mmon-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/common/hadoop-nfs-2.6.0.jar:/opt/h\
+adoop/2.6.0/share/hadoop/hdfs:/opt/hadoop/2.6.0/share/hadoop/hdfs/lib/protobuf-j\
+ava-2.5.0.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/lib/jersey-server-1.9.jar:/opt\
+/hadoop/2.6.0/share/hadoop/hdfs/lib/commons-el-1.0.jar:/opt/hadoop/2.6.0/share/h\
+adoop/hdfs/lib/jetty-util-6.1.26.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/lib/com\
+mons-lang-2.6.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/lib/netty-3.6.2.Final.jar:\
+/opt/hadoop/2.6.0/share/hadoop/hdfs/lib/jetty-6.1.26.jar:/opt/hadoop/2.6.0/share\
+/hadoop/hdfs/lib/htrace-core-3.0.4.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/lib/x\
+ercesImpl-2.9.1.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/lib/xml-apis-1.3.04.jar:\
+/opt/hadoop/2.6.0/share/hadoop/hdfs/lib/jersey-core-1.9.jar:/opt/hadoop/2.6.0/sh\
+are/hadoop/hdfs/lib/servlet-api-2.5.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/lib/\
+commons-cli-1.2.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/lib/asm-3.2.jar:/opt/had\
+oop/2.6.0/share/hadoop/hdfs/lib/guava-11.0.2.jar:/opt/hadoop/2.6.0/share/hadoop/\
+hdfs/lib/jsp-api-2.1.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/lib/commons-daemon-\
+1.0.13.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/lib/jackson-core-asl-1.9.13.jar:/\
+opt/hadoop/2.6.0/share/hadoop/hdfs/lib/commons-codec-1.4.jar:/opt/hadoop/2.6.0/s\
+hare/hadoop/hdfs/lib/log4j-1.2.17.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/lib/co\
+mmons-logging-1.1.3.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/lib/jasper-runtime-5\
+.5.23.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/lib/xmlenc-0.52.jar:/opt/hadoop/2.\
+6.0/share/hadoop/hdfs/lib/commons-io-2.4.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs\
+/lib/jsr305-1.3.9.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/lib/jackson-mapper-asl\
+-1.9.13.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/hadoop-hdfs-2.6.0-tests.jar:/opt\
+/hadoop/2.6.0/share/hadoop/hdfs/hadoop-hdfs-2.6.0.jar:/opt/hadoop/2.6.0/share/ha\
+doop/hdfs/hadoop-hdfs-nfs-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/prot\
+obuf-java-2.5.0.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/jersey-server-1.9.ja\
+r:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/activation-1.1.jar:/opt/hadoop/2.6.0/s\
+hare/hadoop/yarn/lib/jackson-xc-1.9.13.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/l\
+ib/leveldbjni-all-1.8.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/guice-servlet-\
+3.0.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/jetty-util-6.1.26.jar:/opt/hadoo\
+p/2.6.0/share/hadoop/yarn/lib/jettison-1.1.jar:/opt/hadoop/2.6.0/share/hadoop/ya\
+rn/lib/commons-lang-2.6.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/netty-3.6.2.\
+Final.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/zookeeper-3.4.6.jar:/opt/hadoo\
+p/2.6.0/share/hadoop/yarn/lib/jetty-6.1.26.jar:/opt/hadoop/2.6.0/share/hadoop/ya\
+rn/lib/jaxb-impl-2.2.3-1.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/jersey-json\
+-1.9.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/jersey-core-1.9.jar:/opt/hadoop\
+/2.6.0/share/hadoop/yarn/lib/servlet-api-2.5.jar:/opt/hadoop/2.6.0/share/hadoop/\
+yarn/lib/jline-0.9.94.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/commons-httpcl\
+ient-3.1.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/commons-cli-1.2.jar:/opt/ha\
+doop/2.6.0/share/hadoop/yarn/lib/xz-1.0.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/\
+lib/jackson-jaxrs-1.9.13.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/aopalliance\
+-1.0.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/stax-api-1.0-2.jar:/opt/hadoop/\
+2.6.0/share/hadoop/yarn/lib/guice-3.0.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/li\
+b/asm-3.2.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/commons-compress-1.4.1.jar\
+:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/guava-11.0.2.jar:/opt/hadoop/2.6.0/shar\
+e/hadoop/yarn/lib/jaxb-api-2.2.2.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/jav\
+ax.inject-1.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/jackson-core-asl-1.9.13.\
+jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/jersey-client-1.9.jar:/opt/hadoop/2.\
+6.0/share/hadoop/yarn/lib/jersey-guice-1.9.jar:/opt/hadoop/2.6.0/share/hadoop/ya\
+rn/lib/commons-codec-1.4.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/log4j-1.2.1\
+7.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/commons-logging-1.1.3.jar:/opt/had\
+oop/2.6.0/share/hadoop/yarn/lib/commons-io-2.4.jar:/opt/hadoop/2.6.0/share/hadoo\
+p/yarn/lib/commons-collections-3.2.1.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib\
+/jsr305-1.3.9.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/jackson-mapper-asl-1.9\
+.13.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/hadoop-yarn-applications-unmanaged-a\
+m-launcher-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/hadoop-yarn-server-test\
+s-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/hadoop-yarn-common-2.6.0.jar:/op\
+t/hadoop/2.6.0/share/hadoop/yarn/hadoop-yarn-server-applicationhistoryservice-2.\
+6.0.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/hadoop-yarn-server-resourcemanager-2\
+.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/hadoop-yarn-api-2.6.0.jar:/opt/hado\
+op/2.6.0/share/hadoop/yarn/hadoop-yarn-applications-distributedshell-2.6.0.jar:/\
+opt/hadoop/2.6.0/share/hadoop/yarn/hadoop-yarn-client-2.6.0.jar:/opt/hadoop/2.6.\
+0/share/hadoop/yarn/hadoop-yarn-server-nodemanager-2.6.0.jar:/opt/hadoop/2.6.0/s\
+hare/hadoop/yarn/hadoop-yarn-server-web-proxy-2.6.0.jar:/opt/hadoop/2.6.0/share/\
+hadoop/yarn/hadoop-yarn-server-common-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/y\
+arn/hadoop-yarn-registry-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/lib/\
+paranamer-2.3.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/lib/protobuf-java-2.5\
+.0.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/lib/jersey-server-1.9.jar:/opt/h\
+adoop/2.6.0/share/hadoop/mapreduce/lib/junit-4.11.jar:/opt/hadoop/2.6.0/share/ha\
+doop/mapreduce/lib/leveldbjni-all-1.8.jar:/opt/hadoop/2.6.0/share/hadoop/mapredu\
+ce/lib/guice-servlet-3.0.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/lib/netty-\
+3.6.2.Final.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/lib/hadoop-annotations-\
+2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/lib/jersey-core-1.9.jar:/opt/\
+hadoop/2.6.0/share/hadoop/mapreduce/lib/xz-1.0.jar:/opt/hadoop/2.6.0/share/hadoo\
+p/mapreduce/lib/aopalliance-1.0.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/lib\
+/guice-3.0.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/lib/hamcrest-core-1.3.ja\
+r:/opt/hadoop/2.6.0/share/hadoop/mapreduce/lib/asm-3.2.jar:/opt/hadoop/2.6.0/sha\
+re/hadoop/mapreduce/lib/commons-compress-1.4.1.jar:/opt/hadoop/2.6.0/share/hadoo\
+p/mapreduce/lib/avro-1.7.4.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/lib/java\
+x.inject-1.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/lib/jackson-core-asl-1.9\
+.13.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/lib/jersey-guice-1.9.jar:/opt/h\
+adoop/2.6.0/share/hadoop/mapreduce/lib/log4j-1.2.17.jar:/opt/hadoop/2.6.0/share/\
+hadoop/mapreduce/lib/snappy-java-1.0.4.1.jar:/opt/hadoop/2.6.0/share/hadoop/mapr\
+educe/lib/commons-io-2.4.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/lib/jackso\
+n-mapper-asl-1.9.13.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/hadoop-mapreduc\
+e-client-core-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/hadoop-mapreduc\
+e-client-shuffle-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/hadoop-mapre\
+duce-client-common-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/hadoop-map\
+reduce-client-app-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/hadoop-mapr\
+educe-client-hs-plugins-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/hadoo\
+p-mapreduce-client-jobclient-2.6.0-tests.jar:/opt/hadoop/2.6.0/share/hadoop/mapr\
+educe/hadoop-mapreduce-client-jobclient-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop\
+/mapreduce/hadoop-mapreduce-examples-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/ma\
+preduce/hadoop-mapreduce-client-hs-2.6.0.jar:/opt/hadoop/2.6.0/contrib/capacity-\
+scheduler/*.jar\
+STARTUP_MSG:   build = https://git-wip-us.apache.org/repos/asf/hadoop.git -r e34\
+96499ecb8d220fba99dc5ed4c99c8f9e33bb1; compiled by 'jenkins' on 2014-11-13T21:10\
+Z\
+STARTUP_MSG:   java = 1.8.0_60\
+************************************************************/\
+18/09/28 18:01:43 INFO namenode.NameNode: registered UNIX signal handlers for [T\
+ERM, HUP, INT]\
+18/09/28 18:01:43 INFO namenode.NameNode: createNameNode [-format]\
+18/09/28 18:01:43 WARN util.NativeCodeLoader: Unable to load native-hadoop libra\
+ry for your platform... using builtin-java classes where applicable\
+18/09/28 18:01:43 WARN common.Util: Path /scratch/sivakuma/19359513/namenode_dat\
+a should be specified as a URI in configuration files. Please update hdfs config\
+uration.\
+18/09/28 18:01:43 WARN common.Util: Path /scratch/sivakuma/19359513/namenode_dat\
+a should be specified as a URI in configuration files. Please update hdfs config\
+uration.\
+Formatting using clusterid: CID-8ee70df1-601d-41ff-b405-0ca8dea1e51a\
+18/09/28 18:01:43 INFO namenode.FSNamesystem: No KeyProvider found.\
+18/09/28 18:01:43 INFO namenode.FSNamesystem: fsLock is fair:true\
+18/09/28 18:01:43 INFO blockmanagement.DatanodeManager: dfs.block.invalidate.lim\
+it=1000\
+18/09/28 18:01:43 INFO blockmanagement.DatanodeManager: dfs.namenode.datanode.re\
+gistration.ip-hostname-check=true\
+18/09/28 18:01:43 INFO blockmanagement.BlockManager: dfs.namenode.startup.delay.\
+block.deletion.sec is set to 000:00:00:00.000\
+18/09/28 18:01:43 INFO blockmanagement.BlockManager: The block deletion will sta\
+rt around 2018 Sep 28 18:01:43\
+18/09/28 18:01:43 INFO util.GSet: Computing capacity for map BlocksMap\
+18/09/28 18:01:43 INFO util.GSet: VM type       = 64-bit\
+18/09/28 18:01:43 INFO util.GSet: 2.0% max memory 958.5 MB = 19.2 MB\
+18/09/28 18:01:43 INFO util.GSet: capacity      = 2^21 = 2097152 entries\
+18/09/28 18:01:43 INFO blockmanagement.BlockManager: dfs.block.access.token.enab\
+le=false\
+18/09/28 18:01:43 INFO blockmanagement.BlockManager: defaultReplication         \
+= 3\
+18/09/28 18:01:43 INFO blockmanagement.BlockManager: maxReplication             \
+= 512\
+18/09/28 18:01:43 INFO blockmanagement.BlockManager: minReplication             \
+= 1\
+18/09/28 18:01:43 INFO blockmanagement.BlockManager: maxReplicationStreams      \
+= 2\
+18/09/28 18:01:43 INFO blockmanagement.BlockManager: shouldCheckForEnoughRacks  \
+= false\
+18/09/28 18:01:43 INFO blockmanagement.BlockManager: replicationRecheckInterval \
+= 3000\
+18/09/28 18:01:43 INFO blockmanagement.BlockManager: encryptDataTransfer        \
+= false\
+18/09/28 18:01:43 INFO blockmanagement.BlockManager: maxNumBlocksToLog          \
+= 1000\
+18/09/28 18:01:43 INFO namenode.FSNamesystem: fsOwner             = sivakuma (au\
+th:SIMPLE)\
+18/09/28 18:01:43 INFO namenode.FSNamesystem: supergroup          = supergroup\
+18/09/28 18:01:43 INFO namenode.FSNamesystem: isPermissionEnabled = true\
+18/09/28 18:01:43 INFO namenode.FSNamesystem: HA Enabled: false\
+18/09/28 18:01:43 INFO namenode.FSNamesystem: Append Enabled: true\
+18/09/28 18:01:44 INFO util.GSet: Computing capacity for map INodeMap\
+18/09/28 18:01:44 INFO util.GSet: VM type       = 64-bit\
+18/09/28 18:01:44 INFO util.GSet: 1.0% max memory 958.5 MB = 9.6 MB\
+18/09/28 18:01:44 INFO util.GSet: capacity      = 2^20 = 1048576 entries\
+18/09/28 18:01:44 INFO namenode.NameNode: Caching file names occuring more than \
+10 times\
+18/09/28 18:01:44 INFO util.GSet: Computing capacity for map cachedBlocks\
+18/09/28 18:01:44 INFO util.GSet: VM type       = 64-bit\
+18/09/28 18:01:44 INFO util.GSet: 0.25% max memory 958.5 MB = 2.4 MB\
+18/09/28 18:01:44 INFO util.GSet: capacity      = 2^18 = 262144 entries\
+18/09/28 18:01:44 INFO namenode.FSNamesystem: dfs.namenode.safemode.threshold-pc\
+t = 0.9990000128746033\
+18/09/28 18:01:44 INFO namenode.FSNamesystem: dfs.namenode.safemode.min.datanode\
+s = 0\
+18/09/28 18:01:44 INFO namenode.FSNamesystem: dfs.namenode.safemode.extension   \
+  = 30000\
+18/09/28 18:01:44 INFO namenode.FSNamesystem: Retry cache on namenode is enabled\
+18/09/28 18:01:44 INFO namenode.FSNamesystem: Retry cache will use 0.03 of total\
+ heap and retry cache entry expiry time is 600000 millis\
+18/09/28 18:01:44 INFO util.GSet: Computing capacity for map NameNodeRetryCache\
+18/09/28 18:01:44 INFO util.GSet: VM type       = 64-bit\
+18/09/28 18:01:44 INFO util.GSet: 0.029999999329447746% max memory 958.5 MB = 29\
+4.5 KB\
+18/09/28 18:01:44 INFO util.GSet: capacity      = 2^15 = 32768 entries\
+18/09/28 18:01:44 INFO namenode.NNConf: ACLs enabled? false\
+18/09/28 18:01:44 INFO namenode.NNConf: XAttrs enabled? true\
+18/09/28 18:01:44 INFO namenode.NNConf: Maximum size of an xattr: 16384\
+18/09/28 18:01:44 INFO namenode.FSImage: Allocated new BlockPoolId: BP-125120474\
+0-198.202.114.117-1538182904181\
+18/09/28 18:01:44 INFO common.Storage: Storage directory /scratch/sivakuma/19359\
+513/namenode_data has been successfully formatted.\
+18/09/28 18:01:44 INFO namenode.NNStorageRetentionManager: Going to retain 1 ima\
+ges with txid >= 0\
+18/09/28 18:01:44 INFO util.ExitUtil: Exiting with status 0\
+18/09/28 18:01:44 INFO namenode.NameNode: SHUTDOWN_MSG: \
+/************************************************************\
+SHUTDOWN_MSG: Shutting down NameNode at comet-06-50.sdsc.edu/198.202.114.117\
+************************************************************/\
+18/09/28 18:01:44 WARN util.NativeCodeLoader: Unable to load native-hadoop libra\
+ry for your platform... using builtin-java classes where applicable\
+Starting namenodes on [comet-06-50.ibnet]\
+comet-06-50.ibnet: starting namenode, logging to /scratch/sivakuma/19359513/logs\
+/hadoop-sivakuma-namenode-comet-06-50.sdsc.edu.out\
+comet-06-50.ibnet: starting datanode, logging to /scratch/sivakuma/19359513/logs\
+/hadoop-sivakuma-datanode-comet-06-50.sdsc.edu.out\
+comet-06-56.ibnet: starting datanode, logging to /scratch/sivakuma/19359513/logs\
+/hadoop-sivakuma-datanode-comet-06-56.sdsc.edu.out\
+comet-06-54.ibnet: starting datanode, logging to /scratch/sivakuma/19359513/logs\
+/hadoop-sivakuma-datanode-comet-06-54.sdsc.edu.out\
+Starting secondary namenodes [comet-06-50.ibnet]\
+comet-06-50.ibnet: starting secondarynamenode, logging to /scratch/sivakuma/1935\
+9513/logs/hadoop-sivakuma-secondarynamenode-comet-06-50.sdsc.edu.out\
+18/09/28 18:02:00 WARN util.NativeCodeLoader: Unable to load native-hadoop libra\
+ry for your platform... using builtin-java classes where applicable\
+starting yarn daemons\
+starting resourcemanager, logging to /scratch/sivakuma/19359513/logs/yarn-sivaku\
+ma-resourcemanager-comet-06-50.out\
+comet-06-56.ibnet: starting nodemanager, logging to /scratch/sivakuma/19359513/l\
+ogs/yarn-sivakuma-nodemanager-comet-06-56.sdsc.edu.out\
+comet-06-54.ibnet: starting nodemanager, logging to /scratch/sivakuma/19359513/l\
+ogs/yarn-sivakuma-nodemanager-comet-06-54.sdsc.edu.out\
+comet-06-50.ibnet: starting nodemanager, logging to /scratch/sivakuma/19359513/l\
+ogs/yarn-sivakuma-nodemanager-comet-06-50.sdsc.edu.out\
+18/09/28 18:02:04 WARN util.NativeCodeLoader: Unable to load native-hadoop libra\
+ry for your platform... using builtin-java classes where applicable\
+18/09/28 18:02:05 WARN util.NativeCodeLoader: Unable to load native-hadoop libra\
+ry for your platform... using builtin-java classes where applicable\
+18/09/28 18:02:07 WARN util.NativeCodeLoader: Unable to load native-hadoop libra\
+ry for your platform... using builtin-java classes where applicable\
+Exception in thread "main" java.lang.ClassNotFoundException: KMeans\
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)\
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)\
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)\
+	at java.lang.Class.forName0(Native Method)\
+	at java.lang.Class.forName(Class.java:348)\
+	at org.apache.hadoop.util.RunJar.run(RunJar.java:214)\
+	at org.apache.hadoop.util.RunJar.main(RunJar.java:136)\
+18/09/28 18:02:09 WARN util.NativeCodeLoader: Unable to load native-hadoop libra\
+ry for your platform... using builtin-java classes where applicable\
+get: `/user/sivakuma/output/part*': No such file or directory\
+stopping yarn daemons\
+stopping resourcemanager\
+comet-06-56.ibnet: stopping nodemanager\
+comet-06-54.ibnet: stopping nodemanager\
+comet-06-50.ibnet: stopping nodemanager\
+no proxyserver to stop\
+18/09/28 18:02:21 WARN util.NativeCodeLoader: Unable to load native-hadoop libra\
+ry for your platform... using builtin-java classes where applicable\
+Stopping namenodes on [comet-06-50.ibnet]\
+comet-06-50.ibnet: stopping namenode\
+comet-06-56.ibnet: stopping datanode\
+comet-06-54.ibnet: stopping datanode\
+comet-06-50.ibnet: stopping datanode\
+Stopping secondary namenodes [comet-06-50.ibnet]\
+comet-06-50.ibnet: stopping secondarynamenode\
+18/09/28 18:02:40 WARN util.NativeCodeLoader: Unable to load native-hadoop libra\
+ry for your platform... using builtin-java classes where applicable\
+Copying Hadoop logs back to /home/sivakuma/cometcluster/logs...\
+`/scratch/sivakuma/19359513/logs' -> `/home/sivakuma/cometcluster/logs'\
+`/scratch/sivakuma/19359513/logs/hadoop-sivakuma-datanode-comet-06-50.sdsc.edu.l\
+og' -> `/home/sivakuma/cometcluster/logs/hadoop-sivakuma-datanode-comet-06-50.sd\
+sc.edu.log'\
+`/scratch/sivakuma/19359513/logs/SecurityAuth-sivakuma.audit' -> `/home/sivakuma\
+/cometcluster/logs/SecurityAuth-sivakuma.audit'\
+`/scratch/sivakuma/19359513/logs/yarn-sivakuma-resourcemanager-comet-06-50.log' \
+-> `/home/sivakuma/cometcluster/logs/yarn-sivakuma-resourcemanager-comet-06-50.l\
+og'\
+`/scratch/sivakuma/19359513/logs/hadoop-sivakuma-namenode-comet-06-50.sdsc.edu.l\
+og' -> `/home/sivakuma/cometcluster/logs/hadoop-sivakuma-namenode-comet-06-50.sd\
+sc.edu.log'\
+`/scratch/sivakuma/19359513/logs/yarn-sivakuma-nodemanager-comet-06-50.sdsc.edu.\
+log' -> `/home/sivakuma/cometcluster/logs/yarn-sivakuma-nodemanager-comet-06-50.\
+sdsc.edu.log'\
+`/scratch/sivakuma/19359513/logs/hadoop-sivakuma-secondarynamenode-comet-06-50.s\
+dsc.edu.log' -> `/home/sivakuma/cometcluster/logs/hadoop-sivakuma-secondarynamen\
+ode-comet-06-50.sdsc.edu.log'\
+`/scratch/sivakuma/19359513/logs/userlogs' -> `/home/sivakuma/cometcluster/logs/\
+userlogs'\
+`/scratch/sivakuma/19359513/logs/hadoop-sivakuma-secondarynamenode-comet-06-50.s\
+dsc.edu.out' -> `/home/sivakuma/cometcluster/logs/hadoop-sivakuma-secondarynamen\
+ode-comet-06-50.sdsc.edu.out'\
+`/scratch/sivakuma/19359513/logs/yarn-sivakuma-nodemanager-comet-06-50.sdsc.edu.\
+out' -> `/home/sivakuma/cometcluster/logs/yarn-sivakuma-nodemanager-comet-06-50.\
+sdsc.edu.out'\
+`/scratch/sivakuma/19359513/logs/hadoop-sivakuma-namenode-comet-06-50.sdsc.edu.o\
+ut' -> `/home/sivakuma/cometcluster/logs/hadoop-sivakuma-namenode-comet-06-50.sd\
+sc.edu.out'\
+`/scratch/sivakuma/19359513/logs/yarn-sivakuma-resourcemanager-comet-06-50.out' \
+-> `/home/sivakuma/cometcluster/logs/yarn-sivakuma-resourcemanager-comet-06-50.o\
+ut'\
+`/scratch/sivakuma/19359513/logs/hadoop-sivakuma-datanode-comet-06-50.sdsc.edu.o\
+ut' -> `/home/sivakuma/cometcluster/logs/hadoop-sivakuma-datanode-comet-06-50.sd\
+sc.edu.out'\
+removed directory: `/scratch/sivakuma/19359513/mapred_scratch/filecache'\
+removed directory: `/scratch/sivakuma/19359513/mapred_scratch/nmPrivate'\
+removed directory: `/scratch/sivakuma/19359513/mapred_scratch/usercache'\
+removed directory: `/scratch/sivakuma/19359513/mapred_scratch'\
+removed directory: `/scratch/sivakuma/19359513/tmp/dfs/namesecondary'\
+removed directory: `/scratch/sivakuma/19359513/tmp/dfs'\
+removed directory: `/scratch/sivakuma/19359513/tmp'\
+removed `/scratch/sivakuma/19359513/namenode_data/current/fsimage_00000000000000\
+00000.md5'\
+removed `/scratch/sivakuma/19359513/namenode_data/current/fsimage_00000000000000\
+00000'\
+removed `/scratch/sivakuma/19359513/namenode_data/current/VERSION'\
+removed `/scratch/sivakuma/19359513/namenode_data/current/edits_inprogress_00000\
+00000000000001'\
+removed `/scratch/sivakuma/19359513/namenode_data/current/seen_txid'\
+removed directory: `/scratch/sivakuma/19359513/namenode_data/current'\
+removed directory: `/scratch/sivakuma/19359513/namenode_data'\
+removed directory: `/scratch/sivakuma/19359513/hdfs_data/current/BP-1251204740-1\
+98.202.114.117-1538182904181/current/rbw'\
+removed `/scratch/sivakuma/19359513/hdfs_data/current/BP-1251204740-198.202.114.\
+117-1538182904181/current/dfsUsed'\
+removed `/scratch/sivakuma/19359513/hdfs_data/current/BP-1251204740-198.202.114.\
+117-1538182904181/current/VERSION'\
+removed `/scratch/sivakuma/19359513/hdfs_data/current/BP-1251204740-198.202.114.\
+117-1538182904181/current/finalized/subdir0/subdir0/blk_1073741825_1001.meta'\
+removed `/scratch/sivakuma/19359513/hdfs_data/current/BP-1251204740-198.202.114.\
+117-1538182904181/current/finalized/subdir0/subdir0/blk_1073741825'\
+removed `/scratch/sivakuma/19359513/hdfs_data/current/BP-1251204740-198.202.114.\
+117-1538182904181/current/finalized/subdir0/subdir0/blk_1073741826_1002.meta'\
+removed `/scratch/sivakuma/19359513/hdfs_data/current/BP-1251204740-198.202.114.\
+117-1538182904181/current/finalized/subdir0/subdir0/blk_1073741826'\
+removed directory: `/scratch/sivakuma/19359513/hdfs_data/current/BP-1251204740-1\
+98.202.114.117-1538182904181/current/finalized/subdir0/subdir0'\
+removed directory: `/scratch/sivakuma/19359513/hdfs_data/current/BP-1251204740-1\
+98.202.114.117-1538182904181/current/finalized/subdir0'\
+removed directory: `/scratch/sivakuma/19359513/hdfs_data/current/BP-1251204740-1\
+98.202.114.117-1538182904181/current/finalized'\
+removed directory: `/scratch/sivakuma/19359513/hdfs_data/current/BP-1251204740-1\
+98.202.114.117-1538182904181/current'\
+removed directory: `/scratch/sivakuma/19359513/hdfs_data/current/BP-1251204740-1\
+98.202.114.117-1538182904181/tmp'\
+removed `/scratch/sivakuma/19359513/hdfs_data/current/BP-1251204740-198.202.114.\
+117-1538182904181/dncp_block_verification.log.prev'\
+removed `/scratch/sivakuma/19359513/hdfs_data/current/BP-1251204740-198.202.114.\
+117-1538182904181/dncp_block_verification.log.curr'\
+removed directory: `/scratch/sivakuma/19359513/hdfs_data/current/BP-1251204740-1\
+98.202.114.117-1538182904181'\
+removed `/scratch/sivakuma/19359513/hdfs_data/current/VERSION'\
+removed directory: `/scratch/sivakuma/19359513/hdfs_data/current'\
+removed directory: `/scratch/sivakuma/19359513/hdfs_data'\
+removed directory: `/scratch/sivakuma/19359513/pids'\
+removed `/scratch/sivakuma/19359513/logs/hadoop-sivakuma-datanode-comet-06-50.sd\
+sc.edu.log'\
+removed `/scratch/sivakuma/19359513/logs/SecurityAuth-sivakuma.audit'\
+removed `/scratch/sivakuma/19359513/logs/yarn-sivakuma-resourcemanager-comet-06-\
+50.log'\
+removed `/scratch/sivakuma/19359513/logs/hadoop-sivakuma-namenode-comet-06-50.sd\
+sc.edu.log'\
+removed `/scratch/sivakuma/19359513/logs/yarn-sivakuma-nodemanager-comet-06-50.s\
+dsc.edu.log'\
+removed `/scratch/sivakuma/19359513/logs/hadoop-sivakuma-secondarynamenode-comet\
+-06-50.sdsc.edu.log'\
+removed directory: `/scratch/sivakuma/19359513/logs/userlogs'\
+removed `/scratch/sivakuma/19359513/logs/hadoop-sivakuma-secondarynamenode-comet\
+-06-50.sdsc.edu.out'\
+removed `/scratch/sivakuma/19359513/logs/yarn-sivakuma-nodemanager-comet-06-50.s\
+dsc.edu.out'\
+removed `/scratch/sivakuma/19359513/logs/hadoop-sivakuma-namenode-comet-06-50.sd\
+sc.edu.out'\
+removed `/scratch/sivakuma/19359513/logs/yarn-sivakuma-resourcemanager-comet-06-\
+50.out'\
+removed `/scratch/sivakuma/19359513/logs/hadoop-sivakuma-datanode-comet-06-50.sd\
+sc.edu.out'\
+removed directory: `/scratch/sivakuma/19359513/logs'\
+removed directory: `/scratch/sivakuma/19359513/mapred_scratch/nmPrivate'\
+removed directory: `/scratch/sivakuma/19359513/mapred_scratch/usercache'\
+removed directory: `/scratch/sivakuma/19359513/mapred_scratch/filecache'\
+removed directory: `/scratch/sivakuma/19359513/mapred_scratch'\
+removed `/scratch/sivakuma/19359513/hdfs_data/current/BP-1251204740-198.202.114.\
+117-1538182904181/dncp_block_verification.log.curr'\
+removed `/scratch/sivakuma/19359513/hdfs_data/current/BP-1251204740-198.202.114.\
+117-1538182904181/dncp_block_verification.log.prev'\
+removed directory: `/scratch/sivakuma/19359513/hdfs_data/current/BP-1251204740-1\
+98.202.114.117-1538182904181/tmp'\
+removed `/scratch/sivakuma/19359513/hdfs_data/current/BP-1251204740-198.202.114.\
+117-1538182904181/current/finalized/subdir0/subdir0/blk_1073741825_1001.meta'\
+removed `/scratch/sivakuma/19359513/hdfs_data/current/BP-1251204740-198.202.114.\
+117-1538182904181/current/finalized/subdir0/subdir0/blk_1073741825'\
+removed `/scratch/sivakuma/19359513/hdfs_data/current/BP-1251204740-198.202.114.\
+117-1538182904181/current/finalized/subdir0/subdir0/blk_1073741826_1002.meta'\
+removed `/scratch/sivakuma/19359513/hdfs_data/current/BP-1251204740-198.202.114.\
+117-1538182904181/current/finalized/subdir0/subdir0/blk_1073741826'\
+removed directory: `/scratch/sivakuma/19359513/hdfs_data/current/BP-1251204740-1\
+98.202.114.117-1538182904181/current/finalized/subdir0/subdir0'\
+removed directory: `/scratch/sivakuma/19359513/hdfs_data/current/BP-1251204740-1\
+98.202.114.117-1538182904181/current/finalized/subdir0'\
+removed directory: `/scratch/sivakuma/19359513/hdfs_data/current/BP-1251204740-1\
+98.202.114.117-1538182904181/current/finalized'\
+removed directory: `/scratch/sivakuma/19359513/hdfs_data/current/BP-1251204740-1\
+98.202.114.117-1538182904181/current/rbw'\
+removed `/scratch/sivakuma/19359513/hdfs_data/current/BP-1251204740-198.202.114.\
+117-1538182904181/current/VERSION'\
+removed `/scratch/sivakuma/19359513/hdfs_data/current/BP-1251204740-198.202.114.\
+117-1538182904181/current/dfsUsed'\
+removed directory: `/scratch/sivakuma/19359513/hdfs_data/current/BP-1251204740-1\
+98.202.114.117-1538182904181/current'\
+removed directory: `/scratch/sivakuma/19359513/hdfs_data/current/BP-1251204740-1\
+98.202.114.117-1538182904181'\
+removed `/scratch/sivakuma/19359513/hdfs_data/current/VERSION'\
+removed directory: `/scratch/sivakuma/19359513/hdfs_data/current'\
+removed directory: `/scratch/sivakuma/19359513/hdfs_data'\
+removed directory: `/scratch/sivakuma/19359513/pids'\
+removed `/scratch/sivakuma/19359513/logs/hadoop-sivakuma-datanode-comet-06-54.sd\
+sc.edu.log'\
+removed `/scratch/sivakuma/19359513/logs/yarn-sivakuma-nodemanager-comet-06-54.s\
+dsc.edu.log'\
+removed `/scratch/sivakuma/19359513/logs/yarn-sivakuma-nodemanager-comet-06-54.s\
+dsc.edu.out'\
+removed directory: `/scratch/sivakuma/19359513/logs/userlogs'\
+removed `/scratch/sivakuma/19359513/logs/SecurityAuth-sivakuma.audit'\
+removed `/scratch/sivakuma/19359513/logs/hadoop-sivakuma-datanode-comet-06-54.sd\
+sc.edu.out'\
+removed directory: `/scratch/sivakuma/19359513/logs'\
+removed directory: `/scratch/sivakuma/19359513/mapred_scratch/nmPrivate'\
+removed directory: `/scratch/sivakuma/19359513/mapred_scratch/usercache'\
+removed directory: `/scratch/sivakuma/19359513/mapred_scratch/filecache'\
+removed directory: `/scratch/sivakuma/19359513/mapred_scratch'\
+removed `/scratch/sivakuma/19359513/hdfs_data/current/VERSION'\
+removed `/scratch/sivakuma/19359513/hdfs_data/current/BP-1251204740-198.202.114.\
+117-1538182904181/dncp_block_verification.log.prev'\
+removed directory: `/scratch/sivakuma/19359513/hdfs_data/current/BP-1251204740-1\
+98.202.114.117-1538182904181/tmp'\
+removed directory: `/scratch/sivakuma/19359513/hdfs_data/current/BP-1251204740-1\
+98.202.114.117-1538182904181/current/rbw'\
+removed `/scratch/sivakuma/19359513/hdfs_data/current/BP-1251204740-198.202.114.\
+117-1538182904181/current/VERSION'\
+removed `/scratch/sivakuma/19359513/hdfs_data/current/BP-1251204740-198.202.114.\
+117-1538182904181/current/dfsUsed'\
+removed `/scratch/sivakuma/19359513/hdfs_data/current/BP-1251204740-198.202.114.\
+117-1538182904181/current/finalized/subdir0/subdir0/blk_1073741825_1001.meta'\
+removed `/scratch/sivakuma/19359513/hdfs_data/current/BP-1251204740-198.202.114.\
+117-1538182904181/current/finalized/subdir0/subdir0/blk_1073741826_1002.meta'\
+removed `/scratch/sivakuma/19359513/hdfs_data/current/BP-1251204740-198.202.114.\
+117-1538182904181/current/finalized/subdir0/subdir0/blk_1073741825'\
+removed `/scratch/sivakuma/19359513/hdfs_data/current/BP-1251204740-198.202.114.\
+117-1538182904181/current/finalized/subdir0/subdir0/blk_1073741826'\
+removed directory: `/scratch/sivakuma/19359513/hdfs_data/current/BP-1251204740-1\
+98.202.114.117-1538182904181/current/finalized/subdir0/subdir0'\
+removed directory: `/scratch/sivakuma/19359513/hdfs_data/current/BP-1251204740-1\
+98.202.114.117-1538182904181/current/finalized/subdir0'\
+removed directory: `/scratch/sivakuma/19359513/hdfs_data/current/BP-1251204740-1\
+98.202.114.117-1538182904181/current/finalized'\
+removed directory: `/scratch/sivakuma/19359513/hdfs_data/current/BP-1251204740-1\
+98.202.114.117-1538182904181/current'\
+removed `/scratch/sivakuma/19359513/hdfs_data/current/BP-1251204740-198.202.114.\
+117-1538182904181/dncp_block_verification.log.curr'\
+removed directory: `/scratch/sivakuma/19359513/hdfs_data/current/BP-1251204740-1\
+98.202.114.117-1538182904181'\
+removed directory: `/scratch/sivakuma/19359513/hdfs_data/current'\
+removed directory: `/scratch/sivakuma/19359513/hdfs_data'\
+removed directory: `/scratch/sivakuma/19359513/pids'\
+removed `/scratch/sivakuma/19359513/logs/yarn-sivakuma-nodemanager-comet-06-56.s\
+dsc.edu.log'\
+removed `/scratch/sivakuma/19359513/logs/SecurityAuth-sivakuma.audit'\
+removed directory: `/scratch/sivakuma/19359513/logs/userlogs'\
+removed `/scratch/sivakuma/19359513/logs/hadoop-sivakuma-datanode-comet-06-56.sd\
+sc.edu.out'\
+removed `/scratch/sivakuma/19359513/logs/hadoop-sivakuma-datanode-comet-06-56.sd\
+sc.edu.log'\
+removed `/scratch/sivakuma/19359513/logs/yarn-sivakuma-nodemanager-comet-06-56.s\
+dsc.edu.out'\
+removed directory: `/scratch/sivakuma/19359513/logs'\
+removed directory: `/tmp/Jetty_0_0_0_0_50070_hdfs____w2cu08/jsp'\
+removed directory: `/tmp/Jetty_0_0_0_0_50070_hdfs____w2cu08/.active'\
+removed directory: `/tmp/Jetty_0_0_0_0_50070_hdfs____w2cu08'\
+removed directory: `/tmp/Jetty_comet.06.50_ibnet_50090_secondary____hakl1w/jsp'\
+removed directory: `/tmp/Jetty_comet.06.50_ibnet_50090_secondary____hakl1w/.acti\
+ve'\
+removed directory: `/tmp/Jetty_comet.06.50_ibnet_50090_secondary____hakl1w'\
+removed directory: `/tmp/Jetty_0_0_0_0_50075_datanode____hwtdwq_2560474747294065\
+229/jsp'\
+removed directory: `/tmp/Jetty_0_0_0_0_50075_datanode____hwtdwq_2560474747294065\
+229/.active'\
+removed directory: `/tmp/Jetty_0_0_0_0_50075_datanode____hwtdwq_2560474747294065\
+229'\
+[sivakuma@comet-ln2 project1]$ \
+}

@@ -1,0 +1,561 @@
+myHadoop: Setting MH_IPOIB_TRANSFORM='s/\([^.]*\).*$/\1.ibnet/' from myhadoop.conf
+myHadoop: Setting MH_SCRATCH_DIR=/scratch/$USER/$SLURM_JOBID from myhadoop.conf
+myHadoop: Using HADOOP_HOME=/opt/hadoop/2.6.0
+myHadoop: Using MH_SCRATCH_DIR=/scratch/sivakuma/20194695
+myHadoop: Using JAVA_HOME=/usr/java/latest
+myHadoop: Generating Hadoop configuration in directory in /home/sivakuma/cometcluster...
+myHadoop: Backing up old config dir to /home/sivakuma/cometcluster.6...
+`/home/sivakuma/cometcluster' -> `/home/sivakuma/cometcluster.6'
+myHadoop: Designating comet-19-05.ibnet as master node (namenode, secondary namenode, and jobtracker)
+myHadoop: The following nodes will be slaves (datanode, tasktracer):
+comet-19-05.ibnet
+comet-19-16.ibnet
+comet-19-17.ibnet
+18/11/18 12:07:18 INFO namenode.NameNode: STARTUP_MSG: 
+/************************************************************
+STARTUP_MSG: Starting NameNode
+STARTUP_MSG:   host = comet-19-05.sdsc.edu/198.202.113.66
+STARTUP_MSG:   args = [-format]
+STARTUP_MSG:   version = 2.6.0
+STARTUP_MSG:   classpath = /home/sivakuma/cometcluster:/opt/hadoop/2.6.0/share/hadoop/common/lib/hadoop-auth-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/jaxb-impl-2.2.3-1.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/jackson-mapper-asl-1.9.13.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/commons-httpclient-3.1.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/curator-framework-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/commons-digester-1.8.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/netty-3.6.2.Final.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/slf4j-log4j12-1.7.5.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/jaxb-api-2.2.2.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/curator-client-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/xz-1.0.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/jettison-1.1.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/log4j-1.2.17.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/commons-lang-2.6.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/apacheds-kerberos-codec-2.0.0-M15.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/commons-io-2.4.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/jersey-server-1.9.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/commons-logging-1.1.3.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/curator-recipes-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/httpcore-4.2.5.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/commons-cli-1.2.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/avro-1.7.4.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/stax-api-1.0-2.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/httpclient-4.2.5.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/jetty-6.1.26.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/hamcrest-core-1.3.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/xmlenc-0.52.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/guava-11.0.2.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/servlet-api-2.5.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/jackson-core-asl-1.9.13.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/jsch-0.1.42.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/jasper-runtime-5.5.23.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/slf4j-api-1.7.5.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/asm-3.2.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/jersey-core-1.9.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/api-asn1-api-1.0.0-M20.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/junit-4.11.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/hadoop-annotations-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/commons-configuration-1.6.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/htrace-core-3.0.4.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/jsp-api-2.1.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/java-xmlbuilder-0.4.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/commons-compress-1.4.1.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/commons-beanutils-core-1.8.0.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/paranamer-2.3.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/apacheds-i18n-2.0.0-M15.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/jsr305-1.3.9.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/jackson-jaxrs-1.9.13.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/commons-net-3.1.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/commons-codec-1.4.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/jasper-compiler-5.5.23.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/jetty-util-6.1.26.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/commons-collections-3.2.1.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/activation-1.1.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/protobuf-java-2.5.0.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/gson-2.2.4.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/commons-beanutils-1.7.0.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/mockito-all-1.8.5.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/commons-el-1.0.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/commons-math3-3.1.1.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/jackson-xc-1.9.13.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/snappy-java-1.0.4.1.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/jersey-json-1.9.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/zookeeper-3.4.6.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/jets3t-0.9.0.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/api-util-1.0.0-M20.jar:/opt/hadoop/2.6.0/share/hadoop/common/hadoop-common-2.6.0-tests.jar:/opt/hadoop/2.6.0/share/hadoop/common/hadoop-common-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/common/hadoop-nfs-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs:/opt/hadoop/2.6.0/share/hadoop/hdfs/lib/jackson-mapper-asl-1.9.13.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/lib/xercesImpl-2.9.1.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/lib/netty-3.6.2.Final.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/lib/log4j-1.2.17.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/lib/commons-lang-2.6.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/lib/commons-io-2.4.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/lib/jersey-server-1.9.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/lib/commons-logging-1.1.3.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/lib/commons-daemon-1.0.13.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/lib/commons-cli-1.2.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/lib/jetty-6.1.26.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/lib/xmlenc-0.52.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/lib/guava-11.0.2.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/lib/servlet-api-2.5.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/lib/jackson-core-asl-1.9.13.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/lib/jasper-runtime-5.5.23.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/lib/asm-3.2.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/lib/jersey-core-1.9.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/lib/htrace-core-3.0.4.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/lib/jsp-api-2.1.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/lib/jsr305-1.3.9.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/lib/commons-codec-1.4.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/lib/jetty-util-6.1.26.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/lib/protobuf-java-2.5.0.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/lib/commons-el-1.0.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/lib/xml-apis-1.3.04.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/hadoop-hdfs-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/hadoop-hdfs-2.6.0-tests.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/hadoop-hdfs-nfs-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/jersey-guice-1.9.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/jaxb-impl-2.2.3-1.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/jackson-mapper-asl-1.9.13.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/commons-httpclient-3.1.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/netty-3.6.2.Final.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/guice-servlet-3.0.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/jaxb-api-2.2.2.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/xz-1.0.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/jettison-1.1.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/log4j-1.2.17.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/commons-lang-2.6.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/commons-io-2.4.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/jersey-server-1.9.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/commons-logging-1.1.3.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/commons-cli-1.2.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/stax-api-1.0-2.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/jetty-6.1.26.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/jersey-client-1.9.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/javax.inject-1.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/aopalliance-1.0.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/leveldbjni-all-1.8.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/guava-11.0.2.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/servlet-api-2.5.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/jackson-core-asl-1.9.13.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/asm-3.2.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/jersey-core-1.9.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/commons-compress-1.4.1.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/guice-3.0.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/jsr305-1.3.9.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/jackson-jaxrs-1.9.13.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/commons-codec-1.4.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/jetty-util-6.1.26.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/commons-collections-3.2.1.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/jline-0.9.94.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/activation-1.1.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/protobuf-java-2.5.0.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/jackson-xc-1.9.13.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/jersey-json-1.9.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/zookeeper-3.4.6.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/hadoop-yarn-applications-unmanaged-am-launcher-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/hadoop-yarn-client-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/hadoop-yarn-server-applicationhistoryservice-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/hadoop-yarn-applications-distributedshell-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/hadoop-yarn-server-tests-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/hadoop-yarn-server-resourcemanager-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/hadoop-yarn-server-common-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/hadoop-yarn-common-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/hadoop-yarn-server-nodemanager-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/hadoop-yarn-server-web-proxy-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/hadoop-yarn-registry-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/hadoop-yarn-api-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/lib/jersey-guice-1.9.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/lib/jackson-mapper-asl-1.9.13.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/lib/netty-3.6.2.Final.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/lib/guice-servlet-3.0.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/lib/xz-1.0.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/lib/log4j-1.2.17.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/lib/commons-io-2.4.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/lib/jersey-server-1.9.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/lib/avro-1.7.4.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/lib/javax.inject-1.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/lib/hamcrest-core-1.3.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/lib/aopalliance-1.0.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/lib/leveldbjni-all-1.8.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/lib/jackson-core-asl-1.9.13.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/lib/asm-3.2.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/lib/jersey-core-1.9.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/lib/junit-4.11.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/lib/hadoop-annotations-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/lib/commons-compress-1.4.1.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/lib/paranamer-2.3.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/lib/guice-3.0.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/lib/protobuf-java-2.5.0.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/lib/snappy-java-1.0.4.1.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/hadoop-mapreduce-client-app-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/hadoop-mapreduce-client-hs-plugins-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/hadoop-mapreduce-client-shuffle-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/hadoop-mapreduce-client-core-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/hadoop-mapreduce-client-common-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/hadoop-mapreduce-examples-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/hadoop-mapreduce-client-hs-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/hadoop-mapreduce-client-jobclient-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/hadoop-mapreduce-client-jobclient-2.6.0-tests.jar:/opt/hadoop/2.6.0/contrib/capacity-scheduler/*.jar
+STARTUP_MSG:   build = https://git-wip-us.apache.org/repos/asf/hadoop.git -r e3496499ecb8d220fba99dc5ed4c99c8f9e33bb1; compiled by 'jenkins' on 2014-11-13T21:10Z
+STARTUP_MSG:   java = 1.8.0_60
+************************************************************/
+18/11/18 12:07:18 INFO namenode.NameNode: registered UNIX signal handlers for [TERM, HUP, INT]
+18/11/18 12:07:18 INFO namenode.NameNode: createNameNode [-format]
+18/11/18 12:07:18 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+18/11/18 12:07:18 WARN common.Util: Path /scratch/sivakuma/20194695/namenode_data should be specified as a URI in configuration files. Please update hdfs configuration.
+18/11/18 12:07:18 WARN common.Util: Path /scratch/sivakuma/20194695/namenode_data should be specified as a URI in configuration files. Please update hdfs configuration.
+Formatting using clusterid: CID-85925e6d-c047-40cf-8969-a0e75ac141f0
+18/11/18 12:07:18 INFO namenode.FSNamesystem: No KeyProvider found.
+18/11/18 12:07:18 INFO namenode.FSNamesystem: fsLock is fair:true
+18/11/18 12:07:18 INFO blockmanagement.DatanodeManager: dfs.block.invalidate.limit=1000
+18/11/18 12:07:18 INFO blockmanagement.DatanodeManager: dfs.namenode.datanode.registration.ip-hostname-check=true
+18/11/18 12:07:18 INFO blockmanagement.BlockManager: dfs.namenode.startup.delay.block.deletion.sec is set to 000:00:00:00.000
+18/11/18 12:07:18 INFO blockmanagement.BlockManager: The block deletion will start around 2018 Nov 18 12:07:18
+18/11/18 12:07:18 INFO util.GSet: Computing capacity for map BlocksMap
+18/11/18 12:07:18 INFO util.GSet: VM type       = 64-bit
+18/11/18 12:07:18 INFO util.GSet: 2.0% max memory 958.5 MB = 19.2 MB
+18/11/18 12:07:18 INFO util.GSet: capacity      = 2^21 = 2097152 entries
+18/11/18 12:07:18 INFO blockmanagement.BlockManager: dfs.block.access.token.enable=false
+18/11/18 12:07:18 INFO blockmanagement.BlockManager: defaultReplication         = 3
+18/11/18 12:07:18 INFO blockmanagement.BlockManager: maxReplication             = 512
+18/11/18 12:07:18 INFO blockmanagement.BlockManager: minReplication             = 1
+18/11/18 12:07:18 INFO blockmanagement.BlockManager: maxReplicationStreams      = 2
+18/11/18 12:07:18 INFO blockmanagement.BlockManager: shouldCheckForEnoughRacks  = false
+18/11/18 12:07:18 INFO blockmanagement.BlockManager: replicationRecheckInterval = 3000
+18/11/18 12:07:18 INFO blockmanagement.BlockManager: encryptDataTransfer        = false
+18/11/18 12:07:18 INFO blockmanagement.BlockManager: maxNumBlocksToLog          = 1000
+18/11/18 12:07:18 INFO namenode.FSNamesystem: fsOwner             = sivakuma (auth:SIMPLE)
+18/11/18 12:07:18 INFO namenode.FSNamesystem: supergroup          = supergroup
+18/11/18 12:07:18 INFO namenode.FSNamesystem: isPermissionEnabled = true
+18/11/18 12:07:18 INFO namenode.FSNamesystem: HA Enabled: false
+18/11/18 12:07:18 INFO namenode.FSNamesystem: Append Enabled: true
+18/11/18 12:07:18 INFO util.GSet: Computing capacity for map INodeMap
+18/11/18 12:07:18 INFO util.GSet: VM type       = 64-bit
+18/11/18 12:07:18 INFO util.GSet: 1.0% max memory 958.5 MB = 9.6 MB
+18/11/18 12:07:18 INFO util.GSet: capacity      = 2^20 = 1048576 entries
+18/11/18 12:07:18 INFO namenode.NameNode: Caching file names occuring more than 10 times
+18/11/18 12:07:18 INFO util.GSet: Computing capacity for map cachedBlocks
+18/11/18 12:07:18 INFO util.GSet: VM type       = 64-bit
+18/11/18 12:07:18 INFO util.GSet: 0.25% max memory 958.5 MB = 2.4 MB
+18/11/18 12:07:18 INFO util.GSet: capacity      = 2^18 = 262144 entries
+18/11/18 12:07:18 INFO namenode.FSNamesystem: dfs.namenode.safemode.threshold-pct = 0.9990000128746033
+18/11/18 12:07:18 INFO namenode.FSNamesystem: dfs.namenode.safemode.min.datanodes = 0
+18/11/18 12:07:18 INFO namenode.FSNamesystem: dfs.namenode.safemode.extension     = 30000
+18/11/18 12:07:18 INFO namenode.FSNamesystem: Retry cache on namenode is enabled
+18/11/18 12:07:18 INFO namenode.FSNamesystem: Retry cache will use 0.03 of total heap and retry cache entry expiry time is 600000 millis
+18/11/18 12:07:18 INFO util.GSet: Computing capacity for map NameNodeRetryCache
+18/11/18 12:07:18 INFO util.GSet: VM type       = 64-bit
+18/11/18 12:07:18 INFO util.GSet: 0.029999999329447746% max memory 958.5 MB = 294.5 KB
+18/11/18 12:07:18 INFO util.GSet: capacity      = 2^15 = 32768 entries
+18/11/18 12:07:18 INFO namenode.NNConf: ACLs enabled? false
+18/11/18 12:07:18 INFO namenode.NNConf: XAttrs enabled? true
+18/11/18 12:07:18 INFO namenode.NNConf: Maximum size of an xattr: 16384
+18/11/18 12:07:18 INFO namenode.FSImage: Allocated new BlockPoolId: BP-1856984805-198.202.113.66-1542571638920
+18/11/18 12:07:18 INFO common.Storage: Storage directory /scratch/sivakuma/20194695/namenode_data has been successfully formatted.
+18/11/18 12:07:19 INFO namenode.NNStorageRetentionManager: Going to retain 1 images with txid >= 0
+18/11/18 12:07:19 INFO util.ExitUtil: Exiting with status 0
+18/11/18 12:07:19 INFO namenode.NameNode: SHUTDOWN_MSG: 
+/************************************************************
+SHUTDOWN_MSG: Shutting down NameNode at comet-19-05.sdsc.edu/198.202.113.66
+************************************************************/
+18/11/18 12:07:19 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+Starting namenodes on [comet-19-05.ibnet]
+comet-19-05.ibnet: starting namenode, logging to /scratch/sivakuma/20194695/logs/hadoop-sivakuma-namenode-comet-19-05.sdsc.edu.out
+comet-19-05.ibnet: starting datanode, logging to /scratch/sivakuma/20194695/logs/hadoop-sivakuma-datanode-comet-19-05.sdsc.edu.out
+comet-19-16.ibnet: starting datanode, logging to /scratch/sivakuma/20194695/logs/hadoop-sivakuma-datanode-comet-19-16.sdsc.edu.out
+comet-19-17.ibnet: starting datanode, logging to /scratch/sivakuma/20194695/logs/hadoop-sivakuma-datanode-comet-19-17.sdsc.edu.out
+Starting secondary namenodes [comet-19-05.ibnet]
+comet-19-05.ibnet: starting secondarynamenode, logging to /scratch/sivakuma/20194695/logs/hadoop-sivakuma-secondarynamenode-comet-19-05.sdsc.edu.out
+18/11/18 12:07:35 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+starting yarn daemons
+starting resourcemanager, logging to /scratch/sivakuma/20194695/logs/yarn-sivakuma-resourcemanager-comet-19-05.out
+comet-19-16.ibnet: starting nodemanager, logging to /scratch/sivakuma/20194695/logs/yarn-sivakuma-nodemanager-comet-19-16.sdsc.edu.out
+comet-19-17.ibnet: starting nodemanager, logging to /scratch/sivakuma/20194695/logs/yarn-sivakuma-nodemanager-comet-19-17.sdsc.edu.out
+comet-19-05.ibnet: starting nodemanager, logging to /scratch/sivakuma/20194695/logs/yarn-sivakuma-nodemanager-comet-19-05.sdsc.edu.out
+chown: changing ownership of `/tmp': Operation not permitted
+starting historyserver, logging to /tmp/mapred-sivakuma-historyserver-comet-19-05.out
+18/11/18 12:07:40 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+18/11/18 12:07:41 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+18/11/18 12:07:43 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+18/11/18 12:07:44 INFO pig.ExecTypeProvider: Trying ExecType : LOCAL
+18/11/18 12:07:44 INFO pig.ExecTypeProvider: Trying ExecType : MAPREDUCE
+18/11/18 12:07:44 INFO pig.ExecTypeProvider: Picked MAPREDUCE as the ExecType
+2018-11-18 12:07:45,009 [main] INFO  org.apache.pig.Main - Apache Pig version 0.16.0 (r1746530) compiled Jun 01 2016, 23:10:49
+2018-11-18 12:07:45,010 [main] INFO  org.apache.pig.Main - Logging error messages to: /home/sivakuma/project6/pig_1542571665008.log
+2018-11-18 12:07:45,222 [main] WARN  org.apache.hadoop.util.NativeCodeLoader - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2018-11-18 12:07:45,315 [main] INFO  org.apache.pig.impl.util.Utils - Default bootup file /home/sivakuma/.pigbootup not found
+2018-11-18 12:07:45,387 [main] INFO  org.apache.hadoop.conf.Configuration.deprecation - mapred.job.tracker is deprecated. Instead, use mapreduce.jobtracker.address
+2018-11-18 12:07:45,388 [main] INFO  org.apache.hadoop.conf.Configuration.deprecation - fs.default.name is deprecated. Instead, use fs.defaultFS
+2018-11-18 12:07:45,388 [main] INFO  org.apache.pig.backend.hadoop.executionengine.HExecutionEngine - Connecting to hadoop file system at: hdfs://comet-19-05.ibnet:54310
+2018-11-18 12:07:45,700 [main] INFO  org.apache.pig.PigServer - Pig Script ID for the session: PIG-multiply.pig-fd844471-2e81-4160-b5c7-e85fe7144696
+2018-11-18 12:07:45,700 [main] WARN  org.apache.pig.PigServer - ATS is disabled since yarn.timeline-service.enabled set to false
+2018-11-18 12:07:46,189 [main] INFO  org.apache.hadoop.conf.Configuration.deprecation - fs.default.name is deprecated. Instead, use fs.defaultFS
+2018-11-18 12:07:46,237 [main] INFO  org.apache.hadoop.conf.Configuration.deprecation - fs.default.name is deprecated. Instead, use fs.defaultFS
+2018-11-18 12:07:46,305 [main] INFO  org.apache.hadoop.conf.Configuration.deprecation - fs.default.name is deprecated. Instead, use fs.defaultFS
+2018-11-18 12:07:46,323 [main] WARN  org.apache.pig.newplan.BaseOperatorPlan - Encountered Warning IMPLICIT_CAST_TO_DOUBLE 2 time(s).
+2018-11-18 12:07:46,331 [main] INFO  org.apache.hadoop.conf.Configuration.deprecation - mapred.textoutputformat.separator is deprecated. Instead, use mapreduce.output.textoutputformat.separator
+2018-11-18 12:07:46,345 [main] INFO  org.apache.pig.tools.pigstats.ScriptState - Pig features used in the script: HASH_JOIN,GROUP_BY
+2018-11-18 12:07:46,363 [main] INFO  org.apache.hadoop.conf.Configuration.deprecation - fs.default.name is deprecated. Instead, use fs.defaultFS
+2018-11-18 12:07:46,365 [main] INFO  org.apache.pig.data.SchemaTupleBackend - Key [pig.schematuple] was not set... will not generate code.
+2018-11-18 12:07:46,384 [main] INFO  org.apache.pig.newplan.logical.optimizer.LogicalPlanOptimizer - {RULES_ENABLED=[AddForEach, ColumnMapKeyPrune, ConstantCalculator, GroupByConstParallelSetter, LimitOptimizer, LoadTypeCastInserter, MergeFilter, MergeForEach, PartitionFilterOptimizer, PredicatePushdownOptimizer, PushDownForEachFlatten, PushUpFilter, SplitFilter, StreamTypeCastInserter]}
+2018-11-18 12:07:46,425 [main] INFO  org.apache.pig.impl.util.SpillableMemoryManager - Selected heap (PS Old Gen) of size 699400192 to monitor. collectionUsageThreshold = 489580128, usageThreshold = 489580128
+2018-11-18 12:07:46,461 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MRCompiler - File concatenation threshold: 100 optimistic? false
+2018-11-18 12:07:46,480 [main] INFO  org.apache.pig.backend.hadoop.executionengine.util.CombinerOptimizerUtil - Choosing to move algebraic foreach to combiner
+2018-11-18 12:07:46,492 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MRCompiler$LastInputStreamingOptimizer - Rewrite: POPackage->POForEach to POPackage(JoinPackager)
+2018-11-18 12:07:46,496 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MultiQueryOptimizer - MR plan size before optimization: 2
+2018-11-18 12:07:46,497 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MultiQueryOptimizer - MR plan size after optimization: 2
+2018-11-18 12:07:46,512 [main] INFO  org.apache.hadoop.conf.Configuration.deprecation - fs.default.name is deprecated. Instead, use fs.defaultFS
+2018-11-18 12:07:46,530 [main] INFO  org.apache.hadoop.yarn.client.RMProxy - Connecting to ResourceManager at comet-19-05.ibnet/10.22.251.50:8032
+2018-11-18 12:07:46,653 [main] INFO  org.apache.pig.tools.pigstats.mapreduce.MRScriptState - Pig script settings are added to the job
+2018-11-18 12:07:46,656 [main] INFO  org.apache.hadoop.conf.Configuration.deprecation - mapred.job.reduce.markreset.buffer.percent is deprecated. Instead, use mapreduce.reduce.markreset.buffer.percent
+2018-11-18 12:07:46,657 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.JobControlCompiler - mapred.job.reduce.markreset.buffer.percent is not set, set to default 0.3
+2018-11-18 12:07:46,657 [main] INFO  org.apache.hadoop.conf.Configuration.deprecation - mapred.output.compress is deprecated. Instead, use mapreduce.output.fileoutputformat.compress
+2018-11-18 12:07:46,658 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.JobControlCompiler - Reduce phase detected, estimating # of required reducers.
+2018-11-18 12:07:46,659 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.JobControlCompiler - Using reducer estimator: org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.InputSizeReducerEstimator
+2018-11-18 12:07:46,665 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.InputSizeReducerEstimator - BytesPerReducer=1000000000 maxReducers=999 totalInputFileSize=249501
+2018-11-18 12:07:46,665 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.JobControlCompiler - Setting Parallelism to 1
+2018-11-18 12:07:46,665 [main] INFO  org.apache.hadoop.conf.Configuration.deprecation - mapred.reduce.tasks is deprecated. Instead, use mapreduce.job.reduces
+2018-11-18 12:07:46,665 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.JobControlCompiler - This job cannot be converted run in-process
+2018-11-18 12:07:46,672 [main] INFO  org.apache.hadoop.conf.Configuration.deprecation - mapred.submit.replication is deprecated. Instead, use mapreduce.client.submit.file.replication
+2018-11-18 12:07:46,858 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.JobControlCompiler - Added jar file:/oasis/projects/nsf/uot143/fegaras/pig-0.16.0/pig-0.16.0-core-h2.jar to DistributedCache through /tmp/temp-82935226/tmp1161037134/pig-0.16.0-core-h2.jar
+2018-11-18 12:07:46,880 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.JobControlCompiler - Added jar file:/oasis/projects/nsf/uot143/fegaras/pig-0.16.0/lib/automaton-1.11-8.jar to DistributedCache through /tmp/temp-82935226/tmp-2101175159/automaton-1.11-8.jar
+2018-11-18 12:07:46,897 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.JobControlCompiler - Added jar file:/oasis/projects/nsf/uot143/fegaras/pig-0.16.0/lib/antlr-runtime-3.4.jar to DistributedCache through /tmp/temp-82935226/tmp-1850638524/antlr-runtime-3.4.jar
+2018-11-18 12:07:46,918 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.JobControlCompiler - Added jar file:/oasis/projects/nsf/uot143/fegaras/pig-0.16.0/lib/joda-time-2.9.3.jar to DistributedCache through /tmp/temp-82935226/tmp1279713946/joda-time-2.9.3.jar
+2018-11-18 12:07:46,926 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.JobControlCompiler - Setting up single store job
+2018-11-18 12:07:46,929 [main] INFO  org.apache.pig.data.SchemaTupleFrontend - Key [pig.schematuple] is false, will not generate code.
+2018-11-18 12:07:46,929 [main] INFO  org.apache.pig.data.SchemaTupleFrontend - Starting process to move generated code to distributed cacche
+2018-11-18 12:07:46,929 [main] INFO  org.apache.pig.data.SchemaTupleFrontend - Setting key [pig.schematuple.classes] with classes to deserialize []
+2018-11-18 12:07:46,979 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - 1 map-reduce job(s) waiting for submission.
+2018-11-18 12:07:46,979 [main] INFO  org.apache.hadoop.conf.Configuration.deprecation - mapred.job.tracker.http.address is deprecated. Instead, use mapreduce.jobtracker.http.address
+2018-11-18 12:07:46,982 [JobControl] INFO  org.apache.hadoop.yarn.client.RMProxy - Connecting to ResourceManager at comet-19-05.ibnet/10.22.251.50:8032
+2018-11-18 12:07:46,990 [JobControl] INFO  org.apache.hadoop.conf.Configuration.deprecation - mapred.task.id is deprecated. Instead, use mapreduce.task.attempt.id
+2018-11-18 12:07:46,991 [JobControl] INFO  org.apache.hadoop.conf.Configuration.deprecation - fs.default.name is deprecated. Instead, use fs.defaultFS
+2018-11-18 12:07:47,134 [JobControl] WARN  org.apache.hadoop.mapreduce.JobSubmitter - No job jar file set.  User classes may not be found. See Job or Job#setJar(String).
+2018-11-18 12:07:47,150 [JobControl] INFO  org.apache.pig.builtin.PigStorage - Using PigTextInputFormat
+2018-11-18 12:07:47,152 [JobControl] INFO  org.apache.hadoop.mapreduce.lib.input.FileInputFormat - Total input paths to process : 1
+2018-11-18 12:07:47,152 [JobControl] INFO  org.apache.pig.backend.hadoop.executionengine.util.MapRedUtil - Total input paths to process : 1
+2018-11-18 12:07:47,174 [JobControl] INFO  org.apache.pig.backend.hadoop.executionengine.util.MapRedUtil - Total input paths (combined) to process : 1
+2018-11-18 12:07:47,175 [JobControl] INFO  org.apache.pig.builtin.PigStorage - Using PigTextInputFormat
+2018-11-18 12:07:47,177 [JobControl] INFO  org.apache.hadoop.mapreduce.lib.input.FileInputFormat - Total input paths to process : 1
+2018-11-18 12:07:47,177 [JobControl] INFO  org.apache.pig.backend.hadoop.executionengine.util.MapRedUtil - Total input paths to process : 1
+2018-11-18 12:07:47,178 [JobControl] INFO  org.apache.pig.backend.hadoop.executionengine.util.MapRedUtil - Total input paths (combined) to process : 1
+2018-11-18 12:07:47,218 [JobControl] INFO  org.apache.hadoop.mapreduce.JobSubmitter - number of splits:2
+2018-11-18 12:07:47,298 [JobControl] INFO  org.apache.hadoop.mapreduce.JobSubmitter - Submitting tokens for job: job_1542571657026_0001
+2018-11-18 12:07:47,401 [JobControl] INFO  org.apache.hadoop.mapred.YARNRunner - Job jar is not present. Not adding any jar to the list of resources.
+2018-11-18 12:07:47,532 [JobControl] INFO  org.apache.hadoop.yarn.client.api.impl.YarnClientImpl - Submitted application application_1542571657026_0001
+2018-11-18 12:07:47,595 [JobControl] INFO  org.apache.hadoop.mapreduce.Job - The url to track the job: http://comet-19-05.ibnet:8088/proxy/application_1542571657026_0001/
+2018-11-18 12:07:47,595 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - HadoopJobId: job_1542571657026_0001
+2018-11-18 12:07:47,595 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - Processing aliases J,M,N,O
+2018-11-18 12:07:47,595 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - detailed locations: M: N[2,4],N[-1,-1],J[3,4],M[1,4],M[-1,-1],J[3,4] C:  R: O[4,4]
+2018-11-18 12:07:47,601 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - 0% complete
+2018-11-18 12:07:47,601 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - Running jobs are [job_1542571657026_0001]
+2018-11-18 12:07:57,143 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - 25% complete
+2018-11-18 12:07:57,143 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - Running jobs are [job_1542571657026_0001]
+2018-11-18 12:08:02,646 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - 50% complete
+2018-11-18 12:08:02,646 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - Running jobs are [job_1542571657026_0001]
+2018-11-18 12:08:07,652 [main] INFO  org.apache.hadoop.yarn.client.RMProxy - Connecting to ResourceManager at comet-19-05.ibnet/10.22.251.50:8032
+2018-11-18 12:08:07,659 [main] INFO  org.apache.hadoop.mapred.ClientServiceDelegate - Application state is completed. FinalApplicationStatus=SUCCEEDED. Redirecting to job history server
+2018-11-18 12:08:08,220 [main] INFO  org.apache.hadoop.yarn.client.RMProxy - Connecting to ResourceManager at comet-19-05.ibnet/10.22.251.50:8032
+2018-11-18 12:08:08,223 [main] INFO  org.apache.hadoop.mapred.ClientServiceDelegate - Application state is completed. FinalApplicationStatus=SUCCEEDED. Redirecting to job history server
+2018-11-18 12:08:08,267 [main] INFO  org.apache.hadoop.yarn.client.RMProxy - Connecting to ResourceManager at comet-19-05.ibnet/10.22.251.50:8032
+2018-11-18 12:08:08,270 [main] INFO  org.apache.hadoop.mapred.ClientServiceDelegate - Application state is completed. FinalApplicationStatus=SUCCEEDED. Redirecting to job history server
+2018-11-18 12:08:08,346 [main] INFO  org.apache.pig.tools.pigstats.mapreduce.MRScriptState - Pig script settings are added to the job
+2018-11-18 12:08:08,347 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.JobControlCompiler - mapred.job.reduce.markreset.buffer.percent is not set, set to default 0.3
+2018-11-18 12:08:08,347 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.JobControlCompiler - Reduce phase detected, estimating # of required reducers.
+2018-11-18 12:08:08,347 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.JobControlCompiler - Using reducer estimator: org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.InputSizeReducerEstimator
+2018-11-18 12:08:08,355 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.InputSizeReducerEstimator - BytesPerReducer=1000000000 maxReducers=999 totalInputFileSize=8214315
+2018-11-18 12:08:08,355 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.JobControlCompiler - Setting Parallelism to 1
+2018-11-18 12:08:08,355 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.JobControlCompiler - This job cannot be converted run in-process
+2018-11-18 12:08:08,421 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.JobControlCompiler - Added jar file:/oasis/projects/nsf/uot143/fegaras/pig-0.16.0/pig-0.16.0-core-h2.jar to DistributedCache through /tmp/temp-82935226/tmp1183486945/pig-0.16.0-core-h2.jar
+2018-11-18 12:08:08,442 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.JobControlCompiler - Added jar file:/oasis/projects/nsf/uot143/fegaras/pig-0.16.0/lib/automaton-1.11-8.jar to DistributedCache through /tmp/temp-82935226/tmp-1888660602/automaton-1.11-8.jar
+2018-11-18 12:08:08,458 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.JobControlCompiler - Added jar file:/oasis/projects/nsf/uot143/fegaras/pig-0.16.0/lib/antlr-runtime-3.4.jar to DistributedCache through /tmp/temp-82935226/tmp100951163/antlr-runtime-3.4.jar
+2018-11-18 12:08:08,476 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.JobControlCompiler - Added jar file:/oasis/projects/nsf/uot143/fegaras/pig-0.16.0/lib/joda-time-2.9.3.jar to DistributedCache through /tmp/temp-82935226/tmp-2029004564/joda-time-2.9.3.jar
+2018-11-18 12:08:08,477 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.JobControlCompiler - Setting up single store job
+2018-11-18 12:08:08,478 [main] INFO  org.apache.pig.data.SchemaTupleFrontend - Key [pig.schematuple] is false, will not generate code.
+2018-11-18 12:08:08,478 [main] INFO  org.apache.pig.data.SchemaTupleFrontend - Starting process to move generated code to distributed cacche
+2018-11-18 12:08:08,478 [main] INFO  org.apache.pig.data.SchemaTupleFrontend - Setting key [pig.schematuple.classes] with classes to deserialize []
+2018-11-18 12:08:08,494 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - 1 map-reduce job(s) waiting for submission.
+2018-11-18 12:08:08,496 [JobControl] INFO  org.apache.hadoop.yarn.client.RMProxy - Connecting to ResourceManager at comet-19-05.ibnet/10.22.251.50:8032
+2018-11-18 12:08:08,500 [JobControl] INFO  org.apache.hadoop.conf.Configuration.deprecation - fs.default.name is deprecated. Instead, use fs.defaultFS
+2018-11-18 12:08:08,509 [JobControl] WARN  org.apache.hadoop.mapreduce.JobSubmitter - No job jar file set.  User classes may not be found. See Job or Job#setJar(String).
+2018-11-18 12:08:08,519 [JobControl] INFO  org.apache.hadoop.mapreduce.lib.input.FileInputFormat - Total input paths to process : 1
+2018-11-18 12:08:08,519 [JobControl] INFO  org.apache.pig.backend.hadoop.executionengine.util.MapRedUtil - Total input paths to process : 1
+2018-11-18 12:08:08,519 [JobControl] INFO  org.apache.pig.backend.hadoop.executionengine.util.MapRedUtil - Total input paths (combined) to process : 1
+2018-11-18 12:08:08,549 [JobControl] INFO  org.apache.hadoop.mapreduce.JobSubmitter - number of splits:1
+2018-11-18 12:08:08,569 [JobControl] INFO  org.apache.hadoop.mapreduce.JobSubmitter - Submitting tokens for job: job_1542571657026_0002
+2018-11-18 12:08:08,571 [JobControl] INFO  org.apache.hadoop.mapred.YARNRunner - Job jar is not present. Not adding any jar to the list of resources.
+2018-11-18 12:08:08,582 [JobControl] INFO  org.apache.hadoop.yarn.client.api.impl.YarnClientImpl - Submitted application application_1542571657026_0002
+2018-11-18 12:08:08,584 [JobControl] INFO  org.apache.hadoop.mapreduce.Job - The url to track the job: http://comet-19-05.ibnet:8088/proxy/application_1542571657026_0002/
+2018-11-18 12:08:08,995 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - HadoopJobId: job_1542571657026_0002
+2018-11-18 12:08:08,995 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - Processing aliases MATRIX,RESULT
+2018-11-18 12:08:08,995 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - detailed locations: M: MATRIX[6,9],RESULT[5,9] C: MATRIX[6,9],RESULT[5,9] R: MATRIX[6,9]
+2018-11-18 12:08:18,536 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - 75% complete
+2018-11-18 12:08:18,537 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - Running jobs are [job_1542571657026_0002]
+2018-11-18 12:08:23,540 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - Running jobs are [job_1542571657026_0002]
+2018-11-18 12:08:29,047 [main] INFO  org.apache.hadoop.yarn.client.RMProxy - Connecting to ResourceManager at comet-19-05.ibnet/10.22.251.50:8032
+2018-11-18 12:08:29,052 [main] INFO  org.apache.hadoop.mapred.ClientServiceDelegate - Application state is completed. FinalApplicationStatus=SUCCEEDED. Redirecting to job history server
+2018-11-18 12:08:29,107 [main] INFO  org.apache.hadoop.yarn.client.RMProxy - Connecting to ResourceManager at comet-19-05.ibnet/10.22.251.50:8032
+2018-11-18 12:08:29,110 [main] INFO  org.apache.hadoop.mapred.ClientServiceDelegate - Application state is completed. FinalApplicationStatus=SUCCEEDED. Redirecting to job history server
+2018-11-18 12:08:29,137 [main] INFO  org.apache.hadoop.yarn.client.RMProxy - Connecting to ResourceManager at comet-19-05.ibnet/10.22.251.50:8032
+2018-11-18 12:08:29,139 [main] INFO  org.apache.hadoop.mapred.ClientServiceDelegate - Application state is completed. FinalApplicationStatus=SUCCEEDED. Redirecting to job history server
+2018-11-18 12:08:29,160 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - 100% complete
+2018-11-18 12:08:29,168 [main] INFO  org.apache.pig.tools.pigstats.mapreduce.SimplePigStats - Script Statistics: 
+
+HadoopVersion	PigVersion	UserId	StartedAt	FinishedAt	Features
+2.6.0	0.16.0	sivakuma	2018-11-18 12:07:46	2018-11-18 12:08:29	HASH_JOIN,GROUP_BY
+
+Success!
+
+Job Stats (time in seconds):
+JobId	Maps	Reduces	MaxMapTime	MinMapTime	AvgMapTime	MedianMapTime	MaxReduceTime	MinReduceTime	AvgReduceTime	MedianReducetime	Alias	Feature	Outputs
+job_1542571657026_0001	2	1	2	2	2	2	2	2	2	2	J,M,N,O	HASH_JOIN	
+job_1542571657026_0002	1	1	4	4	4	4	2	2	2	2	MATRIX,RESULT	GROUP_BY,COMBINER	hdfs://comet-19-05.ibnet:54310/user/sivakuma/output,
+
+Input(s):
+Successfully read 4957 records from: "hdfs://comet-19-05.ibnet:54310/user/sivakuma/M-matrix-large.txt"
+Successfully read 7487 records from: "hdfs://comet-19-05.ibnet:54310/user/sivakuma/N-matrix-large.txt"
+
+Output(s):
+Successfully stored 59889 records (1463712 bytes) in: "hdfs://comet-19-05.ibnet:54310/user/sivakuma/output"
+
+Counters:
+Total records written : 59889
+Total bytes written : 1463712
+Spillable Memory Manager spill count : 0
+Total bags proactively spilled: 0
+Total records proactively spilled: 0
+
+Job DAG:
+job_1542571657026_0001	->	job_1542571657026_0002,
+job_1542571657026_0002
+
+
+2018-11-18 12:08:29,168 [main] INFO  org.apache.hadoop.yarn.client.RMProxy - Connecting to ResourceManager at comet-19-05.ibnet/10.22.251.50:8032
+2018-11-18 12:08:29,171 [main] INFO  org.apache.hadoop.mapred.ClientServiceDelegate - Application state is completed. FinalApplicationStatus=SUCCEEDED. Redirecting to job history server
+2018-11-18 12:08:29,194 [main] INFO  org.apache.hadoop.yarn.client.RMProxy - Connecting to ResourceManager at comet-19-05.ibnet/10.22.251.50:8032
+2018-11-18 12:08:29,196 [main] INFO  org.apache.hadoop.mapred.ClientServiceDelegate - Application state is completed. FinalApplicationStatus=SUCCEEDED. Redirecting to job history server
+2018-11-18 12:08:29,216 [main] INFO  org.apache.hadoop.yarn.client.RMProxy - Connecting to ResourceManager at comet-19-05.ibnet/10.22.251.50:8032
+2018-11-18 12:08:29,218 [main] INFO  org.apache.hadoop.mapred.ClientServiceDelegate - Application state is completed. FinalApplicationStatus=SUCCEEDED. Redirecting to job history server
+2018-11-18 12:08:29,239 [main] INFO  org.apache.hadoop.yarn.client.RMProxy - Connecting to ResourceManager at comet-19-05.ibnet/10.22.251.50:8032
+2018-11-18 12:08:29,241 [main] INFO  org.apache.hadoop.mapred.ClientServiceDelegate - Application state is completed. FinalApplicationStatus=SUCCEEDED. Redirecting to job history server
+2018-11-18 12:08:29,260 [main] INFO  org.apache.hadoop.yarn.client.RMProxy - Connecting to ResourceManager at comet-19-05.ibnet/10.22.251.50:8032
+2018-11-18 12:08:29,262 [main] INFO  org.apache.hadoop.mapred.ClientServiceDelegate - Application state is completed. FinalApplicationStatus=SUCCEEDED. Redirecting to job history server
+2018-11-18 12:08:29,280 [main] INFO  org.apache.hadoop.yarn.client.RMProxy - Connecting to ResourceManager at comet-19-05.ibnet/10.22.251.50:8032
+2018-11-18 12:08:29,282 [main] INFO  org.apache.hadoop.mapred.ClientServiceDelegate - Application state is completed. FinalApplicationStatus=SUCCEEDED. Redirecting to job history server
+2018-11-18 12:08:29,301 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - Success!
+2018-11-18 12:08:29,317 [main] INFO  org.apache.pig.Main - Pig script completed in 44 seconds and 440 milliseconds (44440 ms)
+18/11/18 12:08:30 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+chown: changing ownership of `/tmp': Operation not permitted
+stopping historyserver
+stopping yarn daemons
+stopping resourcemanager
+comet-19-16.ibnet: stopping nodemanager
+comet-19-16.ibnet: nodemanager did not stop gracefully after 5 seconds: killing with kill -9
+comet-19-05.ibnet: stopping nodemanager
+comet-19-05.ibnet: nodemanager did not stop gracefully after 5 seconds: killing with kill -9
+comet-19-17.ibnet: stopping nodemanager
+comet-19-17.ibnet: nodemanager did not stop gracefully after 5 seconds: killing with kill -9
+no proxyserver to stop
+18/11/18 12:08:47 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+Stopping namenodes on [comet-19-05.ibnet]
+comet-19-05.ibnet: stopping namenode
+comet-19-16.ibnet: stopping datanode
+comet-19-05.ibnet: stopping datanode
+comet-19-17.ibnet: stopping datanode
+Stopping secondary namenodes [comet-19-05.ibnet]
+comet-19-05.ibnet: stopping secondarynamenode
+18/11/18 12:09:05 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+Copying Hadoop logs back to /home/sivakuma/cometcluster/logs...
+`/scratch/sivakuma/20194695/logs' -> `/home/sivakuma/cometcluster/logs'
+`/scratch/sivakuma/20194695/logs/yarn-sivakuma-resourcemanager-comet-19-05.out' -> `/home/sivakuma/cometcluster/logs/yarn-sivakuma-resourcemanager-comet-19-05.out'
+`/scratch/sivakuma/20194695/logs/hadoop-sivakuma-namenode-comet-19-05.sdsc.edu.out' -> `/home/sivakuma/cometcluster/logs/hadoop-sivakuma-namenode-comet-19-05.sdsc.edu.out'
+`/scratch/sivakuma/20194695/logs/hadoop-sivakuma-datanode-comet-19-05.sdsc.edu.out' -> `/home/sivakuma/cometcluster/logs/hadoop-sivakuma-datanode-comet-19-05.sdsc.edu.out'
+`/scratch/sivakuma/20194695/logs/yarn-sivakuma-nodemanager-comet-19-05.sdsc.edu.out' -> `/home/sivakuma/cometcluster/logs/yarn-sivakuma-nodemanager-comet-19-05.sdsc.edu.out'
+`/scratch/sivakuma/20194695/logs/hadoop-sivakuma-secondarynamenode-comet-19-05.sdsc.edu.log' -> `/home/sivakuma/cometcluster/logs/hadoop-sivakuma-secondarynamenode-comet-19-05.sdsc.edu.log'
+`/scratch/sivakuma/20194695/logs/SecurityAuth-sivakuma.audit' -> `/home/sivakuma/cometcluster/logs/SecurityAuth-sivakuma.audit'
+`/scratch/sivakuma/20194695/logs/hadoop-sivakuma-secondarynamenode-comet-19-05.sdsc.edu.out' -> `/home/sivakuma/cometcluster/logs/hadoop-sivakuma-secondarynamenode-comet-19-05.sdsc.edu.out'
+`/scratch/sivakuma/20194695/logs/yarn-sivakuma-nodemanager-comet-19-05.sdsc.edu.log' -> `/home/sivakuma/cometcluster/logs/yarn-sivakuma-nodemanager-comet-19-05.sdsc.edu.log'
+`/scratch/sivakuma/20194695/logs/userlogs' -> `/home/sivakuma/cometcluster/logs/userlogs'
+`/scratch/sivakuma/20194695/logs/userlogs/application_1542571657026_0002' -> `/home/sivakuma/cometcluster/logs/userlogs/application_1542571657026_0002'
+`/scratch/sivakuma/20194695/logs/userlogs/application_1542571657026_0002/container_1542571657026_0002_01_000003' -> `/home/sivakuma/cometcluster/logs/userlogs/application_1542571657026_0002/container_1542571657026_0002_01_000003'
+`/scratch/sivakuma/20194695/logs/userlogs/application_1542571657026_0002/container_1542571657026_0002_01_000003/stderr' -> `/home/sivakuma/cometcluster/logs/userlogs/application_1542571657026_0002/container_1542571657026_0002_01_000003/stderr'
+`/scratch/sivakuma/20194695/logs/userlogs/application_1542571657026_0002/container_1542571657026_0002_01_000003/syslog' -> `/home/sivakuma/cometcluster/logs/userlogs/application_1542571657026_0002/container_1542571657026_0002_01_000003/syslog'
+`/scratch/sivakuma/20194695/logs/userlogs/application_1542571657026_0002/container_1542571657026_0002_01_000003/stdout' -> `/home/sivakuma/cometcluster/logs/userlogs/application_1542571657026_0002/container_1542571657026_0002_01_000003/stdout'
+`/scratch/sivakuma/20194695/logs/userlogs/application_1542571657026_0002/container_1542571657026_0002_01_000001' -> `/home/sivakuma/cometcluster/logs/userlogs/application_1542571657026_0002/container_1542571657026_0002_01_000001'
+`/scratch/sivakuma/20194695/logs/userlogs/application_1542571657026_0002/container_1542571657026_0002_01_000001/stdout' -> `/home/sivakuma/cometcluster/logs/userlogs/application_1542571657026_0002/container_1542571657026_0002_01_000001/stdout'
+`/scratch/sivakuma/20194695/logs/userlogs/application_1542571657026_0002/container_1542571657026_0002_01_000001/syslog' -> `/home/sivakuma/cometcluster/logs/userlogs/application_1542571657026_0002/container_1542571657026_0002_01_000001/syslog'
+`/scratch/sivakuma/20194695/logs/userlogs/application_1542571657026_0002/container_1542571657026_0002_01_000001/stderr' -> `/home/sivakuma/cometcluster/logs/userlogs/application_1542571657026_0002/container_1542571657026_0002_01_000001/stderr'
+`/scratch/sivakuma/20194695/logs/userlogs/application_1542571657026_0001' -> `/home/sivakuma/cometcluster/logs/userlogs/application_1542571657026_0001'
+`/scratch/sivakuma/20194695/logs/userlogs/application_1542571657026_0001/container_1542571657026_0001_01_000001' -> `/home/sivakuma/cometcluster/logs/userlogs/application_1542571657026_0001/container_1542571657026_0001_01_000001'
+`/scratch/sivakuma/20194695/logs/userlogs/application_1542571657026_0001/container_1542571657026_0001_01_000001/syslog' -> `/home/sivakuma/cometcluster/logs/userlogs/application_1542571657026_0001/container_1542571657026_0001_01_000001/syslog'
+`/scratch/sivakuma/20194695/logs/userlogs/application_1542571657026_0001/container_1542571657026_0001_01_000001/stdout' -> `/home/sivakuma/cometcluster/logs/userlogs/application_1542571657026_0001/container_1542571657026_0001_01_000001/stdout'
+`/scratch/sivakuma/20194695/logs/userlogs/application_1542571657026_0001/container_1542571657026_0001_01_000001/stderr' -> `/home/sivakuma/cometcluster/logs/userlogs/application_1542571657026_0001/container_1542571657026_0001_01_000001/stderr'
+`/scratch/sivakuma/20194695/logs/hadoop-sivakuma-datanode-comet-19-05.sdsc.edu.log' -> `/home/sivakuma/cometcluster/logs/hadoop-sivakuma-datanode-comet-19-05.sdsc.edu.log'
+`/scratch/sivakuma/20194695/logs/yarn-sivakuma-resourcemanager-comet-19-05.log' -> `/home/sivakuma/cometcluster/logs/yarn-sivakuma-resourcemanager-comet-19-05.log'
+`/scratch/sivakuma/20194695/logs/hadoop-sivakuma-namenode-comet-19-05.sdsc.edu.log' -> `/home/sivakuma/cometcluster/logs/hadoop-sivakuma-namenode-comet-19-05.sdsc.edu.log'
+removed directory: `/scratch/sivakuma/20194695/mapred_scratch/nmPrivate'
+removed directory: `/scratch/sivakuma/20194695/mapred_scratch/usercache/sivakuma/appcache'
+removed `/scratch/sivakuma/20194695/mapred_scratch/usercache/sivakuma/filecache/14/pig-0.16.0-core-h2.jar'
+removed `/scratch/sivakuma/20194695/mapred_scratch/usercache/sivakuma/filecache/14/.tmp_pig-0.16.0-core-h2.jar.crc'
+removed directory: `/scratch/sivakuma/20194695/mapred_scratch/usercache/sivakuma/filecache/14'
+removed `/scratch/sivakuma/20194695/mapred_scratch/usercache/sivakuma/filecache/13/.tmp_antlr-runtime-3.4.jar.crc'
+removed `/scratch/sivakuma/20194695/mapred_scratch/usercache/sivakuma/filecache/13/antlr-runtime-3.4.jar'
+removed directory: `/scratch/sivakuma/20194695/mapred_scratch/usercache/sivakuma/filecache/13'
+removed `/scratch/sivakuma/20194695/mapred_scratch/usercache/sivakuma/filecache/17/antlr-runtime-3.4.jar'
+removed `/scratch/sivakuma/20194695/mapred_scratch/usercache/sivakuma/filecache/17/.tmp_antlr-runtime-3.4.jar.crc'
+removed directory: `/scratch/sivakuma/20194695/mapred_scratch/usercache/sivakuma/filecache/17'
+removed `/scratch/sivakuma/20194695/mapred_scratch/usercache/sivakuma/filecache/10/.tmp_pig-0.16.0-core-h2.jar.crc'
+removed `/scratch/sivakuma/20194695/mapred_scratch/usercache/sivakuma/filecache/10/pig-0.16.0-core-h2.jar'
+removed directory: `/scratch/sivakuma/20194695/mapred_scratch/usercache/sivakuma/filecache/10'
+removed `/scratch/sivakuma/20194695/mapred_scratch/usercache/sivakuma/filecache/12/joda-time-2.9.3.jar'
+removed `/scratch/sivakuma/20194695/mapred_scratch/usercache/sivakuma/filecache/12/.tmp_joda-time-2.9.3.jar.crc'
+removed directory: `/scratch/sivakuma/20194695/mapred_scratch/usercache/sivakuma/filecache/12'
+removed `/scratch/sivakuma/20194695/mapred_scratch/usercache/sivakuma/filecache/15/.tmp_automaton-1.11-8.jar.crc'
+removed `/scratch/sivakuma/20194695/mapred_scratch/usercache/sivakuma/filecache/15/automaton-1.11-8.jar'
+removed directory: `/scratch/sivakuma/20194695/mapred_scratch/usercache/sivakuma/filecache/15'
+removed `/scratch/sivakuma/20194695/mapred_scratch/usercache/sivakuma/filecache/11/automaton-1.11-8.jar'
+removed `/scratch/sivakuma/20194695/mapred_scratch/usercache/sivakuma/filecache/11/.tmp_automaton-1.11-8.jar.crc'
+removed directory: `/scratch/sivakuma/20194695/mapred_scratch/usercache/sivakuma/filecache/11'
+removed `/scratch/sivakuma/20194695/mapred_scratch/usercache/sivakuma/filecache/16/joda-time-2.9.3.jar'
+removed `/scratch/sivakuma/20194695/mapred_scratch/usercache/sivakuma/filecache/16/.tmp_joda-time-2.9.3.jar.crc'
+removed directory: `/scratch/sivakuma/20194695/mapred_scratch/usercache/sivakuma/filecache/16'
+removed directory: `/scratch/sivakuma/20194695/mapred_scratch/usercache/sivakuma/filecache'
+removed directory: `/scratch/sivakuma/20194695/mapred_scratch/usercache/sivakuma'
+removed directory: `/scratch/sivakuma/20194695/mapred_scratch/usercache'
+removed directory: `/scratch/sivakuma/20194695/mapred_scratch/filecache'
+removed directory: `/scratch/sivakuma/20194695/mapred_scratch'
+removed `/scratch/sivakuma/20194695/tmp/dfs/namesecondary/current/fsimage_0000000000000000000.md5'
+removed `/scratch/sivakuma/20194695/tmp/dfs/namesecondary/current/VERSION'
+removed `/scratch/sivakuma/20194695/tmp/dfs/namesecondary/current/fsimage_0000000000000000243'
+removed `/scratch/sivakuma/20194695/tmp/dfs/namesecondary/current/edits_0000000000000000001-0000000000000000243'
+removed `/scratch/sivakuma/20194695/tmp/dfs/namesecondary/current/fsimage_0000000000000000243.md5'
+removed `/scratch/sivakuma/20194695/tmp/dfs/namesecondary/current/fsimage_0000000000000000000'
+removed directory: `/scratch/sivakuma/20194695/tmp/dfs/namesecondary/current'
+removed directory: `/scratch/sivakuma/20194695/tmp/dfs/namesecondary'
+removed directory: `/scratch/sivakuma/20194695/tmp/dfs'
+removed directory: `/scratch/sivakuma/20194695/tmp'
+removed `/scratch/sivakuma/20194695/namenode_data/current/VERSION'
+removed `/scratch/sivakuma/20194695/namenode_data/current/fsimage_0000000000000000243.md5'
+removed `/scratch/sivakuma/20194695/namenode_data/current/edits_0000000000000000001-0000000000000000243'
+removed `/scratch/sivakuma/20194695/namenode_data/current/fsimage_0000000000000000243'
+removed `/scratch/sivakuma/20194695/namenode_data/current/edits_inprogress_0000000000000000244'
+removed `/scratch/sivakuma/20194695/namenode_data/current/fsimage_0000000000000000000'
+removed `/scratch/sivakuma/20194695/namenode_data/current/seen_txid'
+removed `/scratch/sivakuma/20194695/namenode_data/current/fsimage_0000000000000000000.md5'
+removed directory: `/scratch/sivakuma/20194695/namenode_data/current'
+removed directory: `/scratch/sivakuma/20194695/namenode_data'
+removed `/scratch/sivakuma/20194695/hdfs_data/current/VERSION'
+removed `/scratch/sivakuma/20194695/hdfs_data/current/BP-1856984805-198.202.113.66-1542571638920/dncp_block_verification.log.prev'
+removed `/scratch/sivakuma/20194695/hdfs_data/current/BP-1856984805-198.202.113.66-1542571638920/current/finalized/subdir0/subdir0/blk_1073741838'
+removed `/scratch/sivakuma/20194695/hdfs_data/current/BP-1856984805-198.202.113.66-1542571638920/current/finalized/subdir0/subdir0/blk_1073741839_1015.meta'
+removed `/scratch/sivakuma/20194695/hdfs_data/current/BP-1856984805-198.202.113.66-1542571638920/current/finalized/subdir0/subdir0/blk_1073741826_1002.meta'
+removed `/scratch/sivakuma/20194695/hdfs_data/current/BP-1856984805-198.202.113.66-1542571638920/current/finalized/subdir0/subdir0/blk_1073741826'
+removed `/scratch/sivakuma/20194695/hdfs_data/current/BP-1856984805-198.202.113.66-1542571638920/current/finalized/subdir0/subdir0/blk_1073741851'
+removed `/scratch/sivakuma/20194695/hdfs_data/current/BP-1856984805-198.202.113.66-1542571638920/current/finalized/subdir0/subdir0/blk_1073741851_1027.meta'
+removed `/scratch/sivakuma/20194695/hdfs_data/current/BP-1856984805-198.202.113.66-1542571638920/current/finalized/subdir0/subdir0/blk_1073741849_1025.meta'
+removed `/scratch/sivakuma/20194695/hdfs_data/current/BP-1856984805-198.202.113.66-1542571638920/current/finalized/subdir0/subdir0/blk_1073741852'
+removed `/scratch/sivakuma/20194695/hdfs_data/current/BP-1856984805-198.202.113.66-1542571638920/current/finalized/subdir0/subdir0/blk_1073741825'
+removed `/scratch/sivakuma/20194695/hdfs_data/current/BP-1856984805-198.202.113.66-1542571638920/current/finalized/subdir0/subdir0/blk_1073741838_1014.meta'
+removed `/scratch/sivakuma/20194695/hdfs_data/current/BP-1856984805-198.202.113.66-1542571638920/current/finalized/subdir0/subdir0/blk_1073741849'
+removed `/scratch/sivakuma/20194695/hdfs_data/current/BP-1856984805-198.202.113.66-1542571638920/current/finalized/subdir0/subdir0/blk_1073741839'
+removed `/scratch/sivakuma/20194695/hdfs_data/current/BP-1856984805-198.202.113.66-1542571638920/current/finalized/subdir0/subdir0/blk_1073741825_1001.meta'
+removed `/scratch/sivakuma/20194695/hdfs_data/current/BP-1856984805-198.202.113.66-1542571638920/current/finalized/subdir0/subdir0/blk_1073741852_1028.meta'
+removed directory: `/scratch/sivakuma/20194695/hdfs_data/current/BP-1856984805-198.202.113.66-1542571638920/current/finalized/subdir0/subdir0'
+removed directory: `/scratch/sivakuma/20194695/hdfs_data/current/BP-1856984805-198.202.113.66-1542571638920/current/finalized/subdir0'
+removed directory: `/scratch/sivakuma/20194695/hdfs_data/current/BP-1856984805-198.202.113.66-1542571638920/current/finalized'
+removed directory: `/scratch/sivakuma/20194695/hdfs_data/current/BP-1856984805-198.202.113.66-1542571638920/current/rbw'
+removed `/scratch/sivakuma/20194695/hdfs_data/current/BP-1856984805-198.202.113.66-1542571638920/current/dfsUsed'
+removed `/scratch/sivakuma/20194695/hdfs_data/current/BP-1856984805-198.202.113.66-1542571638920/current/VERSION'
+removed directory: `/scratch/sivakuma/20194695/hdfs_data/current/BP-1856984805-198.202.113.66-1542571638920/current'
+removed directory: `/scratch/sivakuma/20194695/hdfs_data/current/BP-1856984805-198.202.113.66-1542571638920/tmp'
+removed `/scratch/sivakuma/20194695/hdfs_data/current/BP-1856984805-198.202.113.66-1542571638920/dncp_block_verification.log.curr'
+removed directory: `/scratch/sivakuma/20194695/hdfs_data/current/BP-1856984805-198.202.113.66-1542571638920'
+removed directory: `/scratch/sivakuma/20194695/hdfs_data/current'
+removed directory: `/scratch/sivakuma/20194695/hdfs_data'
+removed directory: `/scratch/sivakuma/20194695/pids'
+removed `/scratch/sivakuma/20194695/logs/yarn-sivakuma-resourcemanager-comet-19-05.out'
+removed `/scratch/sivakuma/20194695/logs/hadoop-sivakuma-namenode-comet-19-05.sdsc.edu.out'
+removed `/scratch/sivakuma/20194695/logs/hadoop-sivakuma-datanode-comet-19-05.sdsc.edu.out'
+removed `/scratch/sivakuma/20194695/logs/yarn-sivakuma-nodemanager-comet-19-05.sdsc.edu.out'
+removed `/scratch/sivakuma/20194695/logs/hadoop-sivakuma-secondarynamenode-comet-19-05.sdsc.edu.log'
+removed `/scratch/sivakuma/20194695/logs/SecurityAuth-sivakuma.audit'
+removed `/scratch/sivakuma/20194695/logs/hadoop-sivakuma-secondarynamenode-comet-19-05.sdsc.edu.out'
+removed `/scratch/sivakuma/20194695/logs/yarn-sivakuma-nodemanager-comet-19-05.sdsc.edu.log'
+removed `/scratch/sivakuma/20194695/logs/userlogs/application_1542571657026_0002/container_1542571657026_0002_01_000003/stderr'
+removed `/scratch/sivakuma/20194695/logs/userlogs/application_1542571657026_0002/container_1542571657026_0002_01_000003/syslog'
+removed `/scratch/sivakuma/20194695/logs/userlogs/application_1542571657026_0002/container_1542571657026_0002_01_000003/stdout'
+removed directory: `/scratch/sivakuma/20194695/logs/userlogs/application_1542571657026_0002/container_1542571657026_0002_01_000003'
+removed `/scratch/sivakuma/20194695/logs/userlogs/application_1542571657026_0002/container_1542571657026_0002_01_000001/stdout'
+removed `/scratch/sivakuma/20194695/logs/userlogs/application_1542571657026_0002/container_1542571657026_0002_01_000001/syslog'
+removed `/scratch/sivakuma/20194695/logs/userlogs/application_1542571657026_0002/container_1542571657026_0002_01_000001/stderr'
+removed directory: `/scratch/sivakuma/20194695/logs/userlogs/application_1542571657026_0002/container_1542571657026_0002_01_000001'
+removed directory: `/scratch/sivakuma/20194695/logs/userlogs/application_1542571657026_0002'
+removed `/scratch/sivakuma/20194695/logs/userlogs/application_1542571657026_0001/container_1542571657026_0001_01_000001/syslog'
+removed `/scratch/sivakuma/20194695/logs/userlogs/application_1542571657026_0001/container_1542571657026_0001_01_000001/stdout'
+removed `/scratch/sivakuma/20194695/logs/userlogs/application_1542571657026_0001/container_1542571657026_0001_01_000001/stderr'
+removed directory: `/scratch/sivakuma/20194695/logs/userlogs/application_1542571657026_0001/container_1542571657026_0001_01_000001'
+removed directory: `/scratch/sivakuma/20194695/logs/userlogs/application_1542571657026_0001'
+removed directory: `/scratch/sivakuma/20194695/logs/userlogs'
+removed `/scratch/sivakuma/20194695/logs/hadoop-sivakuma-datanode-comet-19-05.sdsc.edu.log'
+removed `/scratch/sivakuma/20194695/logs/yarn-sivakuma-resourcemanager-comet-19-05.log'
+removed `/scratch/sivakuma/20194695/logs/hadoop-sivakuma-namenode-comet-19-05.sdsc.edu.log'
+removed directory: `/scratch/sivakuma/20194695/logs'
+removed directory: `/scratch/sivakuma/20194695/mapred_scratch/filecache'
+removed `/scratch/sivakuma/20194695/mapred_scratch/usercache/sivakuma/filecache/11/.tmp_automaton-1.11-8.jar.crc'
+removed `/scratch/sivakuma/20194695/mapred_scratch/usercache/sivakuma/filecache/11/automaton-1.11-8.jar'
+removed directory: `/scratch/sivakuma/20194695/mapred_scratch/usercache/sivakuma/filecache/11'
+removed `/scratch/sivakuma/20194695/mapred_scratch/usercache/sivakuma/filecache/12/.tmp_joda-time-2.9.3.jar.crc'
+removed `/scratch/sivakuma/20194695/mapred_scratch/usercache/sivakuma/filecache/12/joda-time-2.9.3.jar'
+removed directory: `/scratch/sivakuma/20194695/mapred_scratch/usercache/sivakuma/filecache/12'
+removed `/scratch/sivakuma/20194695/mapred_scratch/usercache/sivakuma/filecache/10/.tmp_pig-0.16.0-core-h2.jar.crc'
+removed `/scratch/sivakuma/20194695/mapred_scratch/usercache/sivakuma/filecache/10/pig-0.16.0-core-h2.jar'
+removed directory: `/scratch/sivakuma/20194695/mapred_scratch/usercache/sivakuma/filecache/10'
+removed `/scratch/sivakuma/20194695/mapred_scratch/usercache/sivakuma/filecache/13/antlr-runtime-3.4.jar'
+removed `/scratch/sivakuma/20194695/mapred_scratch/usercache/sivakuma/filecache/13/.tmp_antlr-runtime-3.4.jar.crc'
+removed directory: `/scratch/sivakuma/20194695/mapred_scratch/usercache/sivakuma/filecache/13'
+removed directory: `/scratch/sivakuma/20194695/mapred_scratch/usercache/sivakuma/filecache'
+removed directory: `/scratch/sivakuma/20194695/mapred_scratch/usercache/sivakuma/appcache'
+removed directory: `/scratch/sivakuma/20194695/mapred_scratch/usercache/sivakuma'
+removed directory: `/scratch/sivakuma/20194695/mapred_scratch/usercache'
+removed directory: `/scratch/sivakuma/20194695/mapred_scratch/nmPrivate'
+removed directory: `/scratch/sivakuma/20194695/mapred_scratch'
+removed directory: `/scratch/sivakuma/20194695/hdfs_data/current/BP-1856984805-198.202.113.66-1542571638920/tmp'
+removed `/scratch/sivakuma/20194695/hdfs_data/current/BP-1856984805-198.202.113.66-1542571638920/dncp_block_verification.log.prev'
+removed `/scratch/sivakuma/20194695/hdfs_data/current/BP-1856984805-198.202.113.66-1542571638920/current/finalized/subdir0/subdir0/blk_1073741838'
+removed `/scratch/sivakuma/20194695/hdfs_data/current/BP-1856984805-198.202.113.66-1542571638920/current/finalized/subdir0/subdir0/blk_1073741851_1027.meta'
+removed `/scratch/sivakuma/20194695/hdfs_data/current/BP-1856984805-198.202.113.66-1542571638920/current/finalized/subdir0/subdir0/blk_1073741839_1015.meta'
+removed `/scratch/sivakuma/20194695/hdfs_data/current/BP-1856984805-198.202.113.66-1542571638920/current/finalized/subdir0/subdir0/blk_1073741851'
+removed `/scratch/sivakuma/20194695/hdfs_data/current/BP-1856984805-198.202.113.66-1542571638920/current/finalized/subdir0/subdir0/blk_1073741826'
+removed `/scratch/sivakuma/20194695/hdfs_data/current/BP-1856984805-198.202.113.66-1542571638920/current/finalized/subdir0/subdir0/blk_1073741826_1002.meta'
+removed `/scratch/sivakuma/20194695/hdfs_data/current/BP-1856984805-198.202.113.66-1542571638920/current/finalized/subdir0/subdir0/blk_1073741838_1014.meta'
+removed `/scratch/sivakuma/20194695/hdfs_data/current/BP-1856984805-198.202.113.66-1542571638920/current/finalized/subdir0/subdir0/blk_1073741825'
+removed `/scratch/sivakuma/20194695/hdfs_data/current/BP-1856984805-198.202.113.66-1542571638920/current/finalized/subdir0/subdir0/blk_1073741852'
+removed `/scratch/sivakuma/20194695/hdfs_data/current/BP-1856984805-198.202.113.66-1542571638920/current/finalized/subdir0/subdir0/blk_1073741849_1025.meta'
+removed `/scratch/sivakuma/20194695/hdfs_data/current/BP-1856984805-198.202.113.66-1542571638920/current/finalized/subdir0/subdir0/blk_1073741849'
+removed `/scratch/sivakuma/20194695/hdfs_data/current/BP-1856984805-198.202.113.66-1542571638920/current/finalized/subdir0/subdir0/blk_1073741825_1001.meta'
+removed `/scratch/sivakuma/20194695/hdfs_data/current/BP-1856984805-198.202.113.66-1542571638920/current/finalized/subdir0/subdir0/blk_1073741852_1028.meta'
+removed `/scratch/sivakuma/20194695/hdfs_data/current/BP-1856984805-198.202.113.66-1542571638920/current/finalized/subdir0/subdir0/blk_1073741839'
+removed directory: `/scratch/sivakuma/20194695/hdfs_data/current/BP-1856984805-198.202.113.66-1542571638920/current/finalized/subdir0/subdir0'
+removed directory: `/scratch/sivakuma/20194695/hdfs_data/current/BP-1856984805-198.202.113.66-1542571638920/current/finalized/subdir0'
+removed directory: `/scratch/sivakuma/20194695/hdfs_data/current/BP-1856984805-198.202.113.66-1542571638920/current/finalized'
+removed directory: `/scratch/sivakuma/20194695/hdfs_data/current/BP-1856984805-198.202.113.66-1542571638920/current/rbw'
+removed `/scratch/sivakuma/20194695/hdfs_data/current/BP-1856984805-198.202.113.66-1542571638920/current/VERSION'
+removed `/scratch/sivakuma/20194695/hdfs_data/current/BP-1856984805-198.202.113.66-1542571638920/current/dfsUsed'
+removed directory: `/scratch/sivakuma/20194695/hdfs_data/current/BP-1856984805-198.202.113.66-1542571638920/current'
+removed `/scratch/sivakuma/20194695/hdfs_data/current/BP-1856984805-198.202.113.66-1542571638920/dncp_block_verification.log.curr'
+removed directory: `/scratch/sivakuma/20194695/hdfs_data/current/BP-1856984805-198.202.113.66-1542571638920'
+removed `/scratch/sivakuma/20194695/hdfs_data/current/VERSION'
+removed directory: `/scratch/sivakuma/20194695/hdfs_data/current'
+removed directory: `/scratch/sivakuma/20194695/hdfs_data'
+removed directory: `/scratch/sivakuma/20194695/pids'
+removed `/scratch/sivakuma/20194695/logs/SecurityAuth-sivakuma.audit'
+removed `/scratch/sivakuma/20194695/logs/userlogs/application_1542571657026_0001/container_1542571657026_0001_01_000004/stdout'
+removed `/scratch/sivakuma/20194695/logs/userlogs/application_1542571657026_0001/container_1542571657026_0001_01_000004/syslog'
+removed `/scratch/sivakuma/20194695/logs/userlogs/application_1542571657026_0001/container_1542571657026_0001_01_000004/stderr'
+removed directory: `/scratch/sivakuma/20194695/logs/userlogs/application_1542571657026_0001/container_1542571657026_0001_01_000004'
+removed `/scratch/sivakuma/20194695/logs/userlogs/application_1542571657026_0001/container_1542571657026_0001_01_000003/stdout'
+removed `/scratch/sivakuma/20194695/logs/userlogs/application_1542571657026_0001/container_1542571657026_0001_01_000003/syslog'
+removed `/scratch/sivakuma/20194695/logs/userlogs/application_1542571657026_0001/container_1542571657026_0001_01_000003/stderr'
+removed directory: `/scratch/sivakuma/20194695/logs/userlogs/application_1542571657026_0001/container_1542571657026_0001_01_000003'
+removed `/scratch/sivakuma/20194695/logs/userlogs/application_1542571657026_0001/container_1542571657026_0001_01_000002/stderr'
+removed `/scratch/sivakuma/20194695/logs/userlogs/application_1542571657026_0001/container_1542571657026_0001_01_000002/stdout'
+removed `/scratch/sivakuma/20194695/logs/userlogs/application_1542571657026_0001/container_1542571657026_0001_01_000002/syslog'
+removed directory: `/scratch/sivakuma/20194695/logs/userlogs/application_1542571657026_0001/container_1542571657026_0001_01_000002'
+removed directory: `/scratch/sivakuma/20194695/logs/userlogs/application_1542571657026_0001'
+removed directory: `/scratch/sivakuma/20194695/logs/userlogs'
+removed `/scratch/sivakuma/20194695/logs/yarn-sivakuma-nodemanager-comet-19-16.sdsc.edu.out'
+removed `/scratch/sivakuma/20194695/logs/hadoop-sivakuma-datanode-comet-19-16.sdsc.edu.log'
+removed `/scratch/sivakuma/20194695/logs/hadoop-sivakuma-datanode-comet-19-16.sdsc.edu.out'
+removed `/scratch/sivakuma/20194695/logs/yarn-sivakuma-nodemanager-comet-19-16.sdsc.edu.log'
+removed directory: `/scratch/sivakuma/20194695/logs'
+removed directory: `/scratch/sivakuma/20194695/mapred_scratch/nmPrivate'
+removed directory: `/scratch/sivakuma/20194695/mapred_scratch/usercache/sivakuma/appcache'
+removed `/scratch/sivakuma/20194695/mapred_scratch/usercache/sivakuma/filecache/10/pig-0.16.0-core-h2.jar'
+removed `/scratch/sivakuma/20194695/mapred_scratch/usercache/sivakuma/filecache/10/.tmp_pig-0.16.0-core-h2.jar.crc'
+removed directory: `/scratch/sivakuma/20194695/mapred_scratch/usercache/sivakuma/filecache/10'
+removed `/scratch/sivakuma/20194695/mapred_scratch/usercache/sivakuma/filecache/13/antlr-runtime-3.4.jar'
+removed `/scratch/sivakuma/20194695/mapred_scratch/usercache/sivakuma/filecache/13/.tmp_antlr-runtime-3.4.jar.crc'
+removed directory: `/scratch/sivakuma/20194695/mapred_scratch/usercache/sivakuma/filecache/13'
+removed `/scratch/sivakuma/20194695/mapred_scratch/usercache/sivakuma/filecache/11/.tmp_automaton-1.11-8.jar.crc'
+removed `/scratch/sivakuma/20194695/mapred_scratch/usercache/sivakuma/filecache/11/automaton-1.11-8.jar'
+removed directory: `/scratch/sivakuma/20194695/mapred_scratch/usercache/sivakuma/filecache/11'
+removed `/scratch/sivakuma/20194695/mapred_scratch/usercache/sivakuma/filecache/12/.tmp_joda-time-2.9.3.jar.crc'
+removed `/scratch/sivakuma/20194695/mapred_scratch/usercache/sivakuma/filecache/12/joda-time-2.9.3.jar'
+removed directory: `/scratch/sivakuma/20194695/mapred_scratch/usercache/sivakuma/filecache/12'
+removed directory: `/scratch/sivakuma/20194695/mapred_scratch/usercache/sivakuma/filecache'
+removed directory: `/scratch/sivakuma/20194695/mapred_scratch/usercache/sivakuma'
+removed directory: `/scratch/sivakuma/20194695/mapred_scratch/usercache'
+removed directory: `/scratch/sivakuma/20194695/mapred_scratch/filecache'
+removed directory: `/scratch/sivakuma/20194695/mapred_scratch'
+removed `/scratch/sivakuma/20194695/hdfs_data/current/VERSION'
+removed `/scratch/sivakuma/20194695/hdfs_data/current/BP-1856984805-198.202.113.66-1542571638920/dncp_block_verification.log.curr'
+removed `/scratch/sivakuma/20194695/hdfs_data/current/BP-1856984805-198.202.113.66-1542571638920/dncp_block_verification.log.prev'
+removed directory: `/scratch/sivakuma/20194695/hdfs_data/current/BP-1856984805-198.202.113.66-1542571638920/tmp'
+removed directory: `/scratch/sivakuma/20194695/hdfs_data/current/BP-1856984805-198.202.113.66-1542571638920/current/rbw'
+removed `/scratch/sivakuma/20194695/hdfs_data/current/BP-1856984805-198.202.113.66-1542571638920/current/dfsUsed'
+removed `/scratch/sivakuma/20194695/hdfs_data/current/BP-1856984805-198.202.113.66-1542571638920/current/VERSION'
+removed `/scratch/sivakuma/20194695/hdfs_data/current/BP-1856984805-198.202.113.66-1542571638920/current/finalized/subdir0/subdir0/blk_1073741825_1001.meta'
+removed `/scratch/sivakuma/20194695/hdfs_data/current/BP-1856984805-198.202.113.66-1542571638920/current/finalized/subdir0/subdir0/blk_1073741852_1028.meta'
+removed `/scratch/sivakuma/20194695/hdfs_data/current/BP-1856984805-198.202.113.66-1542571638920/current/finalized/subdir0/subdir0/blk_1073741839'
+removed `/scratch/sivakuma/20194695/hdfs_data/current/BP-1856984805-198.202.113.66-1542571638920/current/finalized/subdir0/subdir0/blk_1073741849'
+removed `/scratch/sivakuma/20194695/hdfs_data/current/BP-1856984805-198.202.113.66-1542571638920/current/finalized/subdir0/subdir0/blk_1073741851_1027.meta'
+removed `/scratch/sivakuma/20194695/hdfs_data/current/BP-1856984805-198.202.113.66-1542571638920/current/finalized/subdir0/subdir0/blk_1073741825'
+removed `/scratch/sivakuma/20194695/hdfs_data/current/BP-1856984805-198.202.113.66-1542571638920/current/finalized/subdir0/subdir0/blk_1073741852'
+removed `/scratch/sivakuma/20194695/hdfs_data/current/BP-1856984805-198.202.113.66-1542571638920/current/finalized/subdir0/subdir0/blk_1073741826_1002.meta'
+removed `/scratch/sivakuma/20194695/hdfs_data/current/BP-1856984805-198.202.113.66-1542571638920/current/finalized/subdir0/subdir0/blk_1073741839_1015.meta'
+removed `/scratch/sivakuma/20194695/hdfs_data/current/BP-1856984805-198.202.113.66-1542571638920/current/finalized/subdir0/subdir0/blk_1073741838_1014.meta'
+removed `/scratch/sivakuma/20194695/hdfs_data/current/BP-1856984805-198.202.113.66-1542571638920/current/finalized/subdir0/subdir0/blk_1073741851'
+removed `/scratch/sivakuma/20194695/hdfs_data/current/BP-1856984805-198.202.113.66-1542571638920/current/finalized/subdir0/subdir0/blk_1073741826'
+removed `/scratch/sivakuma/20194695/hdfs_data/current/BP-1856984805-198.202.113.66-1542571638920/current/finalized/subdir0/subdir0/blk_1073741838'
+removed `/scratch/sivakuma/20194695/hdfs_data/current/BP-1856984805-198.202.113.66-1542571638920/current/finalized/subdir0/subdir0/blk_1073741849_1025.meta'
+removed directory: `/scratch/sivakuma/20194695/hdfs_data/current/BP-1856984805-198.202.113.66-1542571638920/current/finalized/subdir0/subdir0'
+removed directory: `/scratch/sivakuma/20194695/hdfs_data/current/BP-1856984805-198.202.113.66-1542571638920/current/finalized/subdir0'
+removed directory: `/scratch/sivakuma/20194695/hdfs_data/current/BP-1856984805-198.202.113.66-1542571638920/current/finalized'
+removed directory: `/scratch/sivakuma/20194695/hdfs_data/current/BP-1856984805-198.202.113.66-1542571638920/current'
+removed directory: `/scratch/sivakuma/20194695/hdfs_data/current/BP-1856984805-198.202.113.66-1542571638920'
+removed directory: `/scratch/sivakuma/20194695/hdfs_data/current'
+removed directory: `/scratch/sivakuma/20194695/hdfs_data'
+removed directory: `/scratch/sivakuma/20194695/pids'
+removed `/scratch/sivakuma/20194695/logs/userlogs/application_1542571657026_0002/container_1542571657026_0002_01_000002/stderr'
+removed `/scratch/sivakuma/20194695/logs/userlogs/application_1542571657026_0002/container_1542571657026_0002_01_000002/stdout'
+removed `/scratch/sivakuma/20194695/logs/userlogs/application_1542571657026_0002/container_1542571657026_0002_01_000002/syslog'
+removed directory: `/scratch/sivakuma/20194695/logs/userlogs/application_1542571657026_0002/container_1542571657026_0002_01_000002'
+removed directory: `/scratch/sivakuma/20194695/logs/userlogs/application_1542571657026_0002'
+removed directory: `/scratch/sivakuma/20194695/logs/userlogs'
+removed `/scratch/sivakuma/20194695/logs/SecurityAuth-sivakuma.audit'
+removed `/scratch/sivakuma/20194695/logs/hadoop-sivakuma-datanode-comet-19-17.sdsc.edu.log'
+removed `/scratch/sivakuma/20194695/logs/yarn-sivakuma-nodemanager-comet-19-17.sdsc.edu.out'
+removed `/scratch/sivakuma/20194695/logs/hadoop-sivakuma-datanode-comet-19-17.sdsc.edu.out'
+removed `/scratch/sivakuma/20194695/logs/yarn-sivakuma-nodemanager-comet-19-17.sdsc.edu.log'
+removed directory: `/scratch/sivakuma/20194695/logs'
+removed directory: `/tmp/Jetty_0_0_0_0_50075_datanode____hwtdwq_7876086363130477171/.active'
+removed directory: `/tmp/Jetty_0_0_0_0_50075_datanode____hwtdwq_7876086363130477171/jsp'
+removed directory: `/tmp/Jetty_0_0_0_0_50075_datanode____hwtdwq_7876086363130477171'
+removed directory: `/tmp/Jetty_comet.19.05_ibnet_50090_secondary____.p2zgqc/.active'
+removed directory: `/tmp/Jetty_comet.19.05_ibnet_50090_secondary____.p2zgqc/jsp'
+removed directory: `/tmp/Jetty_comet.19.05_ibnet_50090_secondary____.p2zgqc'
+removed directory: `/tmp/Jetty_0_0_0_0_50070_hdfs____w2cu08/.active'
+removed directory: `/tmp/Jetty_0_0_0_0_50070_hdfs____w2cu08/jsp'
+removed directory: `/tmp/Jetty_0_0_0_0_50070_hdfs____w2cu08'

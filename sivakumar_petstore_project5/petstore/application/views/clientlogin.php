@@ -1,0 +1,53 @@
+<!DOCTYPE HTML>
+<head>
+<link rel="stylesheet" type="text/css" href="<?php echo base_url();?>assets/css/pet.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<div class="pet"> 
+
+    <h1> Client's Pet Store </h1>  
+
+</div>
+
+
+<div class="row">
+ <div class="col-2"> 
+<nav>
+    <a href="<?php echo site_url("home")?>"> Log Out</a> <br>
+</nav>
+
+
+</div>  
+
+<div class="col-8">
+
+<img src="<?php echo base_url();?>assets/css/pet store banner 5 png (1).png" alt="petbanner" >
+<div id="wrapper">
+<h2> My Pet </h2> 
+     </head>
+     <body>
+          <p> Required Information is marked with an asterisk(*)</p> <br>
+
+               
+          <form method ="post" id="form2" action="/">
+                <label for="fname">*Client Name:</label>
+                <input type="text" id="fname" name="fname" placeholder=" " required>  <br>
+                <label for="fname">My Pet:</label>
+                <input type="text" id="fname" name="fname" placeholder=" " >  <br>
+            
+                <input type="submit" value="Add One"class="submit1"  name="submit">
+                  
+             
+              </form> 
+ </div>
+</div>
+     </body>
+    </div>
+     <footer>
+         <i> Copyright &copy 2018 Pet Store </i><br>
+           <a href="namrata@sivakumar.com"><i>namrata@sivakumar.com</i></a>
+      
+     </footer>
+
+
+     </html>
