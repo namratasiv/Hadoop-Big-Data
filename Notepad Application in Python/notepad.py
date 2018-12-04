@@ -120,7 +120,7 @@ class Notepad:
         # exit() 
   
     def __showAbout(self): 
-        showinfo("Notepad","Mrinal Verma") 
+        showinfo("Notepad","Namrata Sivakumar") 
   
     def __openFile(self): 
           
